@@ -9,6 +9,7 @@
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
+import TechCard from "./TechCard";
 
 const Tech = () => {
   return (
@@ -16,6 +17,7 @@ const Tech = () => {
       {technologies.map((technology) => (
         <div className="w-28 h-28" key={technology.name}>
           <BallCanvas icon={technology.icon} />
+          {/* <TechCard icon={technology.icon} /> */}
           <p className="text-secondary text-center font-semibold">
             {technology.detail}
           </p>

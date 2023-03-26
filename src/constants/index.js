@@ -98,17 +98,17 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
-    detail: "HTML5 Advanced",
+    detail: "Advanced",
   },
   {
     name: "CSS 3",
     icon: css,
-    detail: "CSS Advanced",
+    detail: "Advanced",
   },
   {
     name: "JavaScript",
     icon: javascript,
-    detail: "JavaScript Advanced",
+    detail: "Advanced",
   },
   // {
   //   name: "Bootstrap",
@@ -118,17 +118,17 @@ const technologies = [
   {
     name: "Dart/Flutter",
     icon: flutter,
-    detail: "Flutter Advanced",
+    detail: "Advanced",
   },
   {
     name: "React JS",
     icon: reactjs,
-    detail: "ReactJS Intermediate",
+    detail: "Intermediate",
   },
   {
     name: "React Native",
     icon: reactnative,
-    detail: "React Native Intermediate",
+    detail: "Intermediate",
   },
   // {
   //   name: "Tailwind CSS",
@@ -138,12 +138,12 @@ const technologies = [
   {
     name: "Kotlin",
     icon: kotlin,
-    detail: "Kotlin Advanced",
+    detail: "Advanced",
   },
   {
     name: "VueJS",
     icon: vue,
-    detail: "VueJS Advanced",
+    detail: "Advanced",
   },
   // {
   //   name: "Python",
@@ -178,27 +178,27 @@ const technologies = [
   {
     name: "PostgreSQL",
     icon: postgresql,
-    detail: "PostgreSQL Advanced",
+    detail: "Advanced",
   },
   {
     name: "PowerBI",
     icon: powerbi,
-    detail: "PowerBI Advanced",
+    detail: "Advanced",
   },
   {
     name: "Figma",
     icon: figma,
-    detail: "Figma Advanced",
+    detail: "Advanced",
   },
   {
     name: "WordPress",
     icon: wordpress,
-    detail: "WordPress Expert",
+    detail: "Expert",
   },
   {
     name: "MailChimp",
     icon: mailchimp,
-    detail: "MailChimp Expert",
+    detail: "Expert",
   },
   // {
   //   name: "Adobe Illustrator",

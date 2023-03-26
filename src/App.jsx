@@ -18,8 +18,11 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import TechCard from "./components/TechCard.jsx";
 
 const App = () => {
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
@@ -29,7 +32,7 @@ const App = () => {
         </div>
         <About />
         <Experience />
-        <Tech />
+        {isMobile ? <TechCard /> : <Tech />}
         <Works />
         {/* May change Feedback to Tech Content API fetching articles */}
         {/* <Feedbacks /> https://www.youtube.com/watch?v=0fYi8SGA20k 2:01:05 */}
