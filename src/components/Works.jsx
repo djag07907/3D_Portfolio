@@ -104,13 +104,11 @@ const Works = () => {
           demonstrate my capacity for effective project management and
           problem-solving. With links to the code repository and live version,
           as well as demo videos, you can explore the technical depths of each
-          project and witness firsthand the quality of my work. So why hesitate?
-          Browse my portfolio today and discover the full extent of my abilities
-          as a top-tier developer.
+          project and witness firsthand the quality of my work.
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-7 justify-center">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
