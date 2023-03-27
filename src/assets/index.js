@@ -28,7 +28,7 @@ import kotlin from "./tech/kotlin.png";
 import mysql from "./tech/mysql.png";
 import postgresql from "./tech/postgre.png";
 import powerbi from "./tech/powerbi.png";
-import reactnative from "./tech/react.png";
+import reactnative from "./tech/react-native.png";
 import vue from "./tech/vuejs.png";
 import wordpress from "./tech/wordpress.png";
 import bootstrap from "./tech/bootstrap.png";
