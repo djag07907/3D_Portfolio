@@ -52,20 +52,19 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
       >
         As a skilled IT Engineer and versatile Software Developer, I bring over
-        3 years of expertise in Front End Web & Mobile Development to the table,
-        with proficiency in languages and frameworks such as Flutter, HTML + CSS
-        + JavaScript, VueJs, React, React Native, and Kotlin. Throughout my
+        3 years of expertise in Software Development to the table, with
+        proficiency in Web & Mobile Development Tech Stacks. Throughout my
         career, I've worked with transnational companies on various projects
         spanning verticals such as Business Solutions, e-Commerce,
         Telecommunications, SEO content, and Data Warehousing, which has allowed
         me to develop a diverse skill set and gain valuable experience. <br />
-        <br /> My goal is to create corporate solutions that provide exceptional
-        customer experience through client-oriented interfaces. I seek new
-        challenges and opportunities that allow me to apply my knowledge, add
-        professional value, and achieve constant professional growth. Whether
-        you're looking to revamp your web presence, solve a tech issue, or
-        develop a new mobile app, I'm ready to tackle any project with
-        enthusiasm and expertise, ensuring that it exceeds your expectations.
+        <br /> My goal is to create solutions that provide exceptional customer
+        experience through client-oriented interfaces. I seek new challenges and
+        opportunities that allow me to apply my knowledge, add professional
+        value, and achieve constant professional growth. Whether you're looking
+        to revamp your web presence, solve a tech issue, or develop a new mobile
+        app, I'm ready to tackle any project with enthusiasm and expertise,
+        ensuring that it exceeds your expectations.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 content-center">
         <DownloadCVButton />
