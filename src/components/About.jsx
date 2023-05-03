@@ -55,14 +55,12 @@ const About = () => {
         3 years of expertise in Software Development to the table, with
         proficiency in Web & Mobile Development Tech Stacks. Throughout my
         career, I've worked with transnational companies on various projects
-        spanning verticals such as Business Solutions, e-Commerce,
-        Telecommunications, SEO content, and Data Warehousing, which has allowed
-        me to develop a diverse skill set and gain valuable experience. <br />
+        spanning verticals such as Business Solutions, Data Warehousing,
+        e-Commerce, Telecommunications, and SEO content, which has allowed me to
+        develop a diverse skill set and gain valuable experience. <br />
         <br /> My goal is to create solutions that provide exceptional customer
-        experience through client-oriented interfaces. I seek new challenges and
-        opportunities that allow me to apply my knowledge, add professional
-        value, and achieve constant professional growth. Whether you're looking
-        to revamp your web presence, solve a tech issue, or develop a new mobile
+        experience through client-oriented interfaces. Whether you're looking to
+        revamp your web presence, solve a tech issue, or develop a new mobile
         app, I'm ready to tackle any project with enthusiasm and expertise,
         ensuring that it exceeds your expectations.
       </motion.p>

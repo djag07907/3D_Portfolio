@@ -58,7 +58,7 @@ const Navbar = () => {
             <span className="sm:block hidden">|</span>
             <span className="sm:block hidden">
               {" "}
-              &nbsp;Front End Web & Mobile Dev
+              &nbsp;Web & Mobile Software Developer
             </span>
           </p>
         </Link>
