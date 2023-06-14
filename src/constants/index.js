@@ -49,6 +49,7 @@ import {
   carrent,
   jobit,
   tripguide,
+  acklen,
   paic,
   revelo,
   soas,
@@ -213,6 +214,19 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "FullStack Software Engineer",
+    company_name: "Acklen Avenue - Full Time remote",
+    icon: acklen,
+    iconBg: "#383E56",
+    date: "April 2023 - Present",
+    points: [
+      "Backend development for API consumptions.",
+      "React and Salesforce development.",
+      "Agile, Lean and multidisciplinary team collaborations with Kanban and XP methodologies.",
+      "SOLID principles learning and Clean Coding practices.",
+    ],
+  },
   {
     title: "Front End Web/Mobile Developer & MKT Tech Support",
     company_name: "PAiC - Full Time remote",
