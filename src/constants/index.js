@@ -224,7 +224,7 @@ const experiences = [
       "Backend development for API consumptions.",
       "React and Salesforce development.",
       "Agile, Lean and multidisciplinary team collaborations with Kanban and XP methodologies.",
-      "SOLID principles learning and Clean Coding practices.",
+      "SOLID principles learning and Clean Coding practices...",
     ],
   },
   {
