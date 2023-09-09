@@ -28,7 +28,7 @@ const Tech = () => {
         >
           During my career as a Software Developer, I've obtained a diverse
           skill set and a wide range of valuable experience with different
-          technologies. My preferred Tech Stack is the following.
+          technologies. My preferred Tech Stack is the following:
         </motion.p>
       </div>
       <div className="mt-10 flex flex-row flex-wrap justify-center gap-12">
@@ -46,4 +46,4 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "");
+export default SectionWrapper(Tech, "tech");

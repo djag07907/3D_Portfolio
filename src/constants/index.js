@@ -37,6 +37,7 @@ import {
   powerbi,
   reactnative,
   vue,
+  csharp,
   wordpress,
   bootstrap,
   django,
@@ -71,6 +72,14 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "tech",
+    title: "Tech",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -97,14 +106,14 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "HTML5",
     icon: html,
-    detail: "Advanced",
+    detail: "Expert",
   },
   {
-    name: "CSS 3",
+    name: "CSS3",
     icon: css,
-    detail: "Advanced",
+    detail: "Expert",
   },
   {
     name: "JavaScript",
@@ -124,12 +133,12 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
-    detail: "Intermediate",
+    detail: "Advanced",
   },
   {
     name: "React Native",
     icon: reactnative,
-    detail: "Intermediate",
+    detail: "Advanced",
   },
   // {
   //   name: "Tailwind CSS",
@@ -142,9 +151,9 @@ const technologies = [
     detail: "Advanced",
   },
   {
-    name: "VueJS",
-    icon: vue,
-    detail: "Advanced",
+    name: "C#",
+    icon: csharp,
+    detail: "Intermediate",
   },
   // {
   //   name: "Python",
@@ -222,7 +231,7 @@ const experiences = [
     date: "April 2023 - Present",
     points: [
       "Backend development for API consumptions.",
-      "React and Salesforce development.",
+      "React/TS and C# software development.",
       "Agile, Lean and multidisciplinary team collaborations with Kanban and XP methodologies.",
       "SOLID principles learning and Clean Coding practices.",
     ],
@@ -358,7 +367,8 @@ const projects = [
       },
     ],
     image: gotitnoted,
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://play.google.com/store/apps/details?id=solutions.alva.of.son.gotItNoted&pcampaignid=web_share",
   },
   {
     name: "Karla SL",

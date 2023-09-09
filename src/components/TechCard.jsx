@@ -102,6 +102,7 @@ const Techs = () => {
         {/* <p className={styles.sectionSubText}>My Tech Stack</p> */}
         <h2 className={styles.sectionHeadText}>My Tech Stack</h2>
       </motion.div>
+
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
@@ -112,14 +113,20 @@ const Techs = () => {
           technologies. My preferred Tech Stack is the following.
         </motion.p>
       </div>
+
       <div className="mt-10 flex flex-wrap gap-5 justify-center">
         {technologies.map((technology, index) => (
           <TechCard key={`technology-${index}`} index={index} {...technology} />
         ))}
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 };
 
-export default SectionWrapper(Techs, "");
+export default SectionWrapper(Techs, "tech");
 // export default TechCard;

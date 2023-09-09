@@ -43,17 +43,6 @@ const ProjectCard = ({
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              {/* To open Live Production Version */}
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-            <div
               onClick={() => window.open(source_code_link, "blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
@@ -102,9 +91,8 @@ const Works = () => {
           portfolio of real-world projects provides a comprehensive showcase of
           my skills and expertise, with each project carefully curated to
           demonstrate my capacity for effective project management and
-          problem-solving. With links to the code repository and live version,
-          as well as demo videos, you can explore the technical depths of each
-          project and witness firsthand the quality of my work.
+          problem-solving. You can explore the technical depths of each project
+          and witness firsthand the quality of my work.
         </motion.p>
       </div>
 
@@ -117,4 +105,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

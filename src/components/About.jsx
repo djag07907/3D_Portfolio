@@ -51,13 +51,13 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        As a skilled IT Engineer and versatile Software Developer, I bring over
-        3 years of expertise in Software Development to the table, with
-        proficiency in Web & Mobile Development Tech Stacks. Throughout my
-        career, I've worked with transnational companies on various projects
-        spanning verticals such as Business Solutions, Data Warehousing,
-        e-Commerce, Telecommunications, and SEO content, which has allowed me to
-        develop a diverse skill set and gain valuable experience. <br />
+        As a skilled and versatile Software Developer, I bring over 3 years of
+        expertise in Software Development to the table, with proficiency in Web
+        & Mobile Development. Throughout my career, I've worked with
+        transnational companies on various projects spanning verticals such as
+        Business Solutions, e-Commerce, Telecommunications, and SEO content,
+        which has allowed me to develop a diverse skill set and gain valuable
+        experience. <br />
         <br /> My goal is to create solutions that provide exceptional customer
         experience through client-oriented interfaces. Whether you're looking to
         revamp your web presence, solve a tech issue, or develop a new mobile
@@ -67,7 +67,7 @@ const About = () => {
       <div className="mt-20 flex flex-wrap gap-10 content-center">
         <DownloadCVButton />
       </div>
-      <div className="mt-20 flex flex-wrap gap-10 content-center justify-center">
+      <div className="mt-10 flex flex-wrap gap-10 content-center justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
