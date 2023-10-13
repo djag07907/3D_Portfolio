@@ -51,7 +51,7 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        As a skilled and versatile Software Developer, I bring over 3 years of
+        As a skilled and versatile Software Engineer, I bring over 4 years of
         expertise in Software Development to the table, with proficiency in Web
         & Mobile Development. Throughout my career, I've worked with
         transnational companies on various projects spanning verticals such as

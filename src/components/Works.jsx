@@ -86,13 +86,13 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          As a seasoned developer, I pride myself on my ability to tackle
-          complex challenges and work with a diverse range of technologies. My
-          portfolio of real-world projects provides a comprehensive showcase of
-          my skills and expertise, with each project carefully curated to
-          demonstrate my capacity for effective project management and
-          problem-solving. You can explore the technical depths of each project
-          and witness firsthand the quality of my work.
+          As a seasoned Software Engineer, I pride myself on my ability to
+          tackle complex challenges and work with a diverse range of
+          technologies. My portfolio of real-world projects provides a
+          comprehensive showcase of my skills and expertise, with each project
+          carefully curated to demonstrate my capacity for effective project
+          management and problem-solving. You can explore the technical depths
+          of each project and witness firsthand the quality of my work.
         </motion.p>
       </div>
 

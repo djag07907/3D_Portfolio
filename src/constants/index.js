@@ -87,11 +87,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Software Developer",
+    title: "Web Software Development",
     icon: web,
   },
   {
-    title: "Mobile Software Developer",
+    title: "Mobile Software Development",
     icon: mobile,
   },
   {
