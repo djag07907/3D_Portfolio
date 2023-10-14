@@ -220,7 +220,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "April 2023 - October 2023",
     points: [
-      "FullStack Software Development with React/TS, CV and RESTApi.",
+      "FullStack Software Development with React/TS, C# and RESTApi.",
       "Agile and multidisciplinary team collaborations with Kanban and XP methodologies using SOLID principles, MVC, Project Refinement and Clean Coding practices.",
       "CI/CD using GitLab and SonarCloud for code quality.",
     ],
