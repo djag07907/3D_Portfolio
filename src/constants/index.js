@@ -165,11 +165,11 @@ const technologies = [
   //   icon: django,
   //   detail: "Django Intermediate",
   // },
-  // {
-  //   name: "Node JS",
-  //   icon: nodejs,
-  //   detail: "NodeJS Intermediate",
-  // },
+  {
+    name: "Node JS",
+    icon: nodejs,
+    detail: "Intermediate",
+  },
   // {
   //   name: "MongoDB",
   //   icon: mongodb,
@@ -205,20 +205,10 @@ const technologies = [
     icon: wordpress,
     detail: "Expert",
   },
-  {
-    name: "MailChimp",
-    icon: mailchimp,
-    detail: "Expert",
-  },
   // {
-  //   name: "Adobe Illustrator",
-  //   icon: illustrator,
-  //   detail: "Illustrator Advanced",
-  // },
-  // {
-  //   name: "Adobe PhotoShop",
-  //   icon: photoshop,
-  //   detail: "PhotoShop Advanced",
+  //   name: "MailChimp",
+  //   icon: mailchimp,
+  //   detail: "Expert",
   // },
 ];
 
@@ -228,12 +218,11 @@ const experiences = [
     company_name: "Acklen Avenue - Full Time remote",
     icon: acklen,
     iconBg: "#383E56",
-    date: "April 2023 - Present",
+    date: "April 2023 - October 2023",
     points: [
-      "Backend development for API consumptions.",
-      "React/TS and C# software development.",
-      "Agile, Lean and multidisciplinary team collaborations with Kanban and XP methodologies.",
-      "SOLID principles learning and Clean Coding practices.",
+      "FullStack Software Development with React/TS, CV and RESTApi.",
+      "Agile and multidisciplinary team collaborations with Kanban and XP methodologies using SOLID principles, MVC, Project Refinement and Clean Coding practices.",
+      "CI/CD using GitLab and SonarCloud for code quality.",
     ],
   },
   {
@@ -243,10 +232,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "October 2020 - February 2023",
     points: [
-      "Design and Development of UX/UI - oriented interfaces for international clients in both Web and Mobile environments.",
-      "Front-End development in projects from verticals such as Business Solutions, e-Commerce and Telecom.",
-      "Agile team management and multidisciplinary team collaborations.",
-      "SEO optimization and Google Analytics implementation for corporate websites with MKT campaign management on social media.",
+      "Front-end design and development for projects with UX/UI-oriented interfaces for Int'l clients in both Web and Mobile platforms from verticals such as Business Solutions, e-Commerce, and Telecom.",
+      "Agile/SCRUM Team Management and multidisciplinary team collaborations.",
+      "SEO optimization + Google Analytics implementation for corporate websites with MKT campaign management on social media.",
     ],
   },
   {
@@ -266,11 +254,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jan 2016 - Present",
     points: [
-      "CEO and Founder of 'Son of Alva Solutions' (Micro software development and graphic design corporate)",
-      "Graphic design and Web development projects such as LPs, innovative mobile apps, Management Systems, and Banners for small local companies.",
-      "CMS (WordPress/Joomla) implementation and support for local and international companies.",
-      "Social/Educational mobile app development and active regional tech challenges competitor.",
-      "Former CEO and Associate of Café Pelao MSME with HR and Operative management.",
+      "CEO and Founder of 'Son of Alva Solutions'",
+      "Design and development of projects such as LPs, Innovative web/mobile apps, Custom Management Systems, Social/Educational software for local and Int'l companies, using CMS, frameworks, BaaS and deployments in AWS/Heroku/GitHub.",
+      "Active regional tech challenges competitor.",
+      "Former CEO and Associate of Cafe Pelao MSME with HR and Ops Management.",
     ],
   },
   {
@@ -283,7 +270,6 @@ const experiences = [
       "ISO 22301, ISO 9001 e ISO 20001 Implementation.",
       "Internal network infrastructure project management and collegiate systems.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Tech support assistance to collegiate members.",
     ],
   },
   {
@@ -392,48 +378,60 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Project under development 1",
-    description: "TBA.",
+    name: "CODENAME: BSC-23",
+    description: "Real State platform.",
     tags: [
       {
-        name: "tag1",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "tag2",
+        name: "nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "tag3",
+        name: "strapi",
         color: "pink-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "multiplatform",
+        color: "blue-text-gradient",
       },
     ],
     image: developing,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Project under development 2",
-    description: "TBA.",
+    name: "CODENAME: MSR-23",
+    description: "Digital Wallet.",
     tags: [
       {
-        name: "tag1",
+        name: "react-native",
         color: "blue-text-gradient",
       },
       {
-        name: "tag2",
-        color: "green-text-gradient",
+        name: "ruby",
+        color: "pink-text-gradient",
       },
       {
-        name: "tag3",
-        color: "pink-text-gradient",
+        name: "heroku",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "mobile",
+        color: "green-text-gradient",
       },
     ],
     image: developing,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Project under development 3",
-    description: "TBA.",
+    name: "CODENAME: SOASW-23",
+    description: "Corporate profile website.",
     tags: [
       {
         name: "tag1",
@@ -449,7 +447,23 @@ const projects = [
       },
     ],
     image: developing,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://sonofalvasolutions.com/",
+  },
+  {
+    name: "CODENAME: MUSHU-23",
+    description: "Pet app.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: developing,
+    source_code_link: "https://sonofalvasolutions.com/",
   },
   // {
   //   name: "Project under development 4",
