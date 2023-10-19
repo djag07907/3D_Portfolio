@@ -54,6 +54,7 @@ import tripguide from "./tripguide.png";
 import tato from "./tato.png";
 import gotitnoted from "./gotitnoted.png";
 import karlasl from "./karlasl.png";
+import soasm from "./soas_main.png";
 import developing from "./developing.png";
 
 export {
@@ -110,5 +111,6 @@ export {
   tato,
   gotitnoted,
   karlasl,
+  soasm,
   developing,
 };

@@ -60,6 +60,7 @@ import {
   gotitnoted,
   karlasl,
   developing,
+  soasm,
 } from "../assets";
 
 export const navLinks = [
@@ -332,7 +333,7 @@ const projects = [
       },
     ],
     image: tato,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://www.youtube.com/watch?v=huN8egefT2Y",
   },
   {
     name: "Got It Noted",
@@ -376,6 +377,35 @@ const projects = [
     ],
     image: karlasl,
     source_code_link: "https://github.com/",
+  },
+  {
+    name: "SoAS Landing Page",
+    description:
+      "Corporate profile website for a Software Development and IT Services Company.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "emailjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "lottie_animations",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: soasm,
+    source_code_link: "https://sonofalvasolutions.com/",
   },
   {
     name: "CODENAME: BSC-23",
@@ -428,26 +458,6 @@ const projects = [
     ],
     image: developing,
     source_code_link: "https://github.com/",
-  },
-  {
-    name: "CODENAME: SOASW-23",
-    description: "Corporate profile website.",
-    tags: [
-      {
-        name: "tag1",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tag2",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tag3",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: developing,
-    source_code_link: "https://sonofalvasolutions.com/",
   },
   {
     name: "CODENAME: MUSHU-23",

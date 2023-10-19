@@ -30,15 +30,35 @@ const Contact = () => {
 
   // Contact form post send load
   const [loading, setLoading] = useState(false);
+  const [validationErrors, setValidationErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
     setForm({ ...form, [name]: value });
+    setValidationErrors({ ...validationErrors, [name]: "" });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const errors = {};
+    if (!form.name) {
+      errors.name = "Please enter your name.";
+    }
+    if (!form.email) {
+      errors.email = "Please enter your email.";
+    }
+    if (!form.message) {
+      errors.message = "Please enter your message.";
+    }
+    if (!/^\S+@\S+\.\S+$/.test(form.email)) {
+      errors.email = "Please enter a valid email address.";
+    }
+
+    if (Object.keys(errors).length > 0) {
+      setValidationErrors(errors);
+      return;
+    }
     setLoading(true);
 
     emailjs
@@ -100,6 +120,9 @@ const Contact = () => {
               placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
+            {validationErrors.name && (
+              <span className="text-red-500">{validationErrors.name}</span>
+            )}
           </label>
           {/* Email input */}
           <label className="flex flex-col">
@@ -112,6 +135,9 @@ const Contact = () => {
               placeholder="What's your e-mail?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
+            {validationErrors.email && (
+              <span className="text-red-500">{validationErrors.email}</span>
+            )}
           </label>
           {/* Message input */}
           <label className="flex flex-col">
@@ -124,6 +150,9 @@ const Contact = () => {
               placeholder="What do you require?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
+            {validationErrors.message && (
+              <span className="text-red-500">{validationErrors.message}</span>
+            )}
           </label>
           <button
             type="submit"
