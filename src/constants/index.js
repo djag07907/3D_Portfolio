@@ -61,6 +61,7 @@ import {
   karlasl,
   developing,
   soasm,
+  mindmap,
 } from "../assets";
 
 export const navLinks = [
@@ -96,11 +97,11 @@ const services = [
     icon: mobile,
   },
   {
-    title: "UX/UI Designer & Developer",
+    title: "UX/UI Design & Development",
     icon: backend,
   },
   {
-    title: "SEO Tech Content Creator",
+    title: "SEO Tech Content Creation",
     icon: creator,
   },
 ];
@@ -224,6 +225,7 @@ const experiences = [
       "FullStack Software Development with React/TS, C# and RESTApi.",
       "Agile and multidisciplinary team collaborations with Kanban and XP methodologies using SOLID principles, MVC, Project Refinement and Clean Coding practices.",
       "CI/CD using GitLab and SonarCloud for code quality.",
+      "Skills: NodeJs, ReactJs, TypeScript, JavaScript, C#, TailwindCSS, Rest API, JSON, MVC and Trello.",
     ],
   },
   {
@@ -236,6 +238,7 @@ const experiences = [
       "Front-end design and development for projects with UX/UI-oriented interfaces for Int'l clients in both Web and Mobile platforms from verticals such as Business Solutions, e-Commerce, and Telecom.",
       "Agile/SCRUM Team Management and multidisciplinary team collaborations.",
       "SEO optimization + Google Analytics implementation for corporate websites with MKT campaign management on social media.",
+      "Skills: ReactJs, TypeScript, JavaScript, React Native, Flutter, TailwindCSS, Rest API, JSON, XML, SQL, Jira, Figma, PowerBI, Google Analytics, WordPress and MailChimp.",
     ],
   },
   {
@@ -253,12 +256,13 @@ const experiences = [
     company_name: "SoAS - Freelance",
     icon: soas,
     iconBg: "#E6DEDD",
-    date: "Jan 2016 - Present",
+    date: "Jan 2018 - Present",
     points: [
       "CEO and Founder of 'Son of Alva Solutions'",
       "Design and development of projects such as LPs, Innovative web/mobile apps, Custom Management Systems, Social/Educational software for local and Int'l companies, using CMS, frameworks, BaaS and deployments in AWS/Heroku/GitHub.",
       "Active regional tech challenges competitor.",
       "Former CEO and Associate of Cafe Pelao MSME with HR and Ops Management.",
+      "Skills: NodeJS/Strapi, ReactJs, TypeScript, React Native, Flutter, TailwindCSS, Django, Trello, Jira, PostgreSQL, MySQL, Rest API, JSON, Figma, AWS, Heroku, GitHub Pages, Firebase, Google Analytics, WordPress and MailChimp.",
     ],
   },
   {
@@ -271,6 +275,7 @@ const experiences = [
       "ISO 22301, ISO 9001 e ISO 20001 Implementation.",
       "Internal network infrastructure project management and collegiate systems.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Skills: JavaScript, WordPress and Joomla.",
     ],
   },
   {
@@ -282,6 +287,7 @@ const experiences = [
     points: [
       "Leading teacher of Professional technical baccalaureate in Computer Science.",
       "LMS implementation and management for classes during the pandemic crisis.",
+      "Skills: EdModo, MS Office, PSeInt and C++.",
     ],
   },
 ];
@@ -345,8 +351,12 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "android",
         color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "orange-text-gradient",
       },
       {
         name: "mobile",
@@ -367,8 +377,12 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "android",
         color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "orange-text-gradient",
       },
       {
         name: "mobile",
@@ -381,7 +395,7 @@ const projects = [
   {
     name: "SoAS Landing Page",
     description:
-      "Corporate profile website for a Software Development and IT Services Company.",
+      "My Entrepreneur website for Software Development, Graphic Design, and IT Services Company.",
     tags: [
       {
         name: "reactjs",
@@ -408,8 +422,38 @@ const projects = [
     source_code_link: "https://sonofalvasolutions.com/",
   },
   {
+    name: "Spot Mind-mapping",
+    description:
+      "Demo version of the Mind-mapping web app that is under beta review and testing. It has features such as Node adding, local browser mind-map saving, node connections. More features to be added.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "reactflow",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "localstorage",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "web",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: mindmap,
+    source_code_link: "https://spot-mindmapping.danielalvarez-dev.com/",
+  },
+  {
     name: "CODENAME: BSC-23",
-    description: "Real State platform.",
+    description:
+      "Real State platform for searching, publishing and managing properties, agent contact and management, profile management and geolocation. App and web platform soon to be released this 2024!",
     tags: [
       {
         name: "flutter",
@@ -428,8 +472,40 @@ const projects = [
         color: "orange-text-gradient",
       },
       {
-        name: "multiplatform",
+        name: "reactjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
         color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "auth",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "payment-gateway",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ios",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "android",
+        color: "green-text-gradient",
+      },
+      {
+        name: "web",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "multiplatform",
+        color: "pink-text-gradient",
       },
     ],
     image: developing,
@@ -437,7 +513,8 @@ const projects = [
   },
   {
     name: "CODENAME: MSR-23",
-    description: "Digital Wallet.",
+    description:
+      "Digital Wallet and Business management platform for money transfer, commercial offers, locale management, team management, and coupons. Soon to be released this 2024!",
     tags: [
       {
         name: "react-native",
@@ -452,16 +529,41 @@ const projects = [
         color: "orange-text-gradient",
       },
       {
-        name: "mobile",
+        name: "aws",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "kyc",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "restapi",
         color: "green-text-gradient",
+      },
+      {
+        name: "ios",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "android",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mobile",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "multiplatform",
+        color: "orange-text-gradient",
       },
     ],
     image: developing,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://www.masari-app.com",
   },
   {
     name: "CODENAME: MUSHU-23",
-    description: "Pet app.",
+    description:
+      "Pet platform for multiple pet profile management, medical records and veterinary suggestions with freemium and premium accounts, donation system and food reviews. Beta to be released late this 2024!",
     tags: [
       {
         name: "flutter",
@@ -469,6 +571,34 @@ const projects = [
       },
       {
         name: "firebase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "reactjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "web",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "ios",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "android",
+        color: "green-text-gradient",
+      },
+      {
+        name: "multiplatform",
         color: "orange-text-gradient",
       },
     ],

@@ -44,6 +44,11 @@ const App = () => {
         {/* <Feedbacks /> https://www.youtube.com/watch?v=0fYi8SGA20k 2:01:05 */}
         {isMobile ? <br></br> : <div></div>}
         {isMobile ? <br></br> : <div></div>}
+        <div className="text-center">
+          <p className="text-secondary text-[17px] max-w-8xl leading-[30px] mt-10">
+            More projects soon to be announced!
+          </p>
+        </div>
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

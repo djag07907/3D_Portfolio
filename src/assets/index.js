@@ -56,6 +56,7 @@ import gotitnoted from "./gotitnoted.png";
 import karlasl from "./karlasl.png";
 import soasm from "./soas_main.png";
 import developing from "./developing.png";
+import mindmap from "./mind-map.png";
 
 export {
   logo,
@@ -113,4 +114,5 @@ export {
   karlasl,
   soasm,
   developing,
+  mindmap,
 };

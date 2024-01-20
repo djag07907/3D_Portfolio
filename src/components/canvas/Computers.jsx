@@ -9,7 +9,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
+import Tooltip from "../Tooltip";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
@@ -83,6 +83,7 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Computers isMobile={isMobile} />
+        {/* {!isMobile && <Tooltip />} */}
       </Suspense>
 
       <Preload all />
