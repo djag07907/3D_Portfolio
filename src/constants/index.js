@@ -62,7 +62,13 @@ import {
   developing,
   soasm,
   mindmap,
+  webanimation,
+  mobileanimation,
+  uxui,
+  seo,
 } from "../assets";
+
+// import { webanimation, mobileanimation, uxui, seo } from "../assets/animations";
 
 export const navLinks = [
   {
@@ -91,18 +97,22 @@ const services = [
   {
     title: "Web Software Development",
     icon: web,
+    // import("../assets/animations/Animation - 1706186375806.json"),
   },
   {
     title: "Mobile Software Development",
     icon: mobile,
+    // import("../assets/animations/Animation - 1706186930975.json"),
   },
   {
     title: "UX/UI Design & Development",
     icon: backend,
+    // import("../assets/animations/Animation - 1706187999424.json"),
   },
   {
-    title: "SEO Tech Content Creation",
+    title: "Software Consultancy",
     icon: creator,
+    // import("../assets/animations/Animation - 1706188074793.json"),
   },
 ];
 

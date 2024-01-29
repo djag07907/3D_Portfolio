@@ -52,17 +52,15 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
       >
         As a skilled and versatile Software Engineer, I bring over 4 years of
-        expertise in Software Development to the table, with proficiency in Web
-        & Mobile Development. Throughout my career, I've worked with
-        transnational companies on various projects spanning verticals such as
-        Business Solutions, e-Commerce, Telecommunications, and SEO content,
-        which has allowed me to develop a diverse skill set and gain valuable
-        experience. <br />
-        <br /> My goal is to create solutions that provide exceptional customer
-        experience through client-oriented interfaces. Whether you're looking to
-        revamp your web presence, solve a tech issue, or develop a new mobile
-        app, I'm ready to tackle any project with enthusiasm and expertise,
-        ensuring that it exceeds your expectations.
+        experience crafting cutting-edge web and mobile solutions to the table.
+        Throughout my career, I've worked with transnational companies on
+        projects spanning verticals such as Business Solutions, e-Commerce,
+        Telecommunications, and SEO content, which has allowed me to develop a
+        diverse skill set and gain valuable experience. <br />
+        <br />
+        Whether you're looking to revamp your web presence, solve a tech issue,
+        or develop a new mobile app, I'm ready to tackle any project with
+        enthusiasm and expertise, ensuring that it exceeds your expectations.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 content-center">
         <DownloadCVButton />

@@ -58,6 +58,11 @@ import soasm from "./soas_main.png";
 import developing from "./developing.png";
 import mindmap from "./mind-map.png";
 
+import webanimation from "./animations/Animation - 1706186375806.json";
+import mobileanimation from "./animations/Animation - 1706186930975.json";
+import uxui from "./animations/Animation - 1706187999424.json";
+import seo from "./animations/Animation - 1706188074793.json";
+
 export {
   logo,
   propic,
@@ -115,4 +120,8 @@ export {
   soasm,
   developing,
   mindmap,
+  webanimation,
+  mobileanimation,
+  uxui,
+  seo,
 };
