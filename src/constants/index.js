@@ -63,9 +63,11 @@ import {
   soasm,
   mindmap,
   webanimation,
+  webanimation1,
   mobileanimation,
+  mobileanimation1,
   uxui,
-  seo,
+  software,
 } from "../assets";
 
 // import { webanimation, mobileanimation, uxui, seo } from "../assets/animations";
@@ -96,19 +98,19 @@ export const navLinks = [
 const services = [
   {
     title: "Web Software Development",
-    icon: web,
+    icon: webanimation1,
   },
   {
-    title: "Mobile Software Development",
-    icon: mobile,
+    title: "App Software Development",
+    icon: mobileanimation1,
   },
   {
-    title: "UX/UI Design & Development",
-    icon: backend,
+    title: "UX/UI Design",
+    icon: uxui,
   },
   {
     title: "Software Consultancy",
-    icon: creator,
+    icon: software,
   },
 ];
 

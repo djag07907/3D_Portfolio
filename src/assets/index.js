@@ -59,9 +59,11 @@ import developing from "./developing.png";
 import mindmap from "./mind-map.png";
 
 import webanimation from "./animations/web.json";
+import webanimation1 from "./animations/web1.json";
 import mobileanimation from "./animations/mobile.json";
+import mobileanimation1 from "./animations/mobile1.json";
 import uxui from "./animations/uxui.json";
-import seo from "./animations/software.json";
+import software from "./animations/software.json";
 
 export {
   logo,
@@ -121,7 +123,9 @@ export {
   developing,
   mindmap,
   webanimation,
+  webanimation1,
   mobileanimation,
+  mobileanimation1,
   uxui,
-  seo,
+  software,
 };

@@ -14,8 +14,18 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import DownloadCVButton from "./CV";
+import Lottie from "react-lottie";
 
 const ServiceCard = ({ index, title, icon }) => {
+  const animationOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: icon,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <ParallaxTilt className="xs:w-[250px] w-full">
       <motion.div
@@ -30,7 +40,8 @@ const ServiceCard = ({ index, title, icon }) => {
           }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          {/* <img src={icon} alt={title} className="w-16 h-16 object-contain" /> */}
+          <Lottie options={animationOptions} height={150} width={150} />
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>
