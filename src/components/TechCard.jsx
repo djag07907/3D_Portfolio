@@ -14,56 +14,6 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../style";
 import ParallaxTilt from "react-parallax-tilt";
 
-// import ParallaxTilt from "react-parallax-tilt";
-
-// const TechCard = () => {
-//   return (
-//     <ParallaxTilt className="xs:w-[250px] w-full">
-//       <img
-//         src={technologies.icon}
-//         alt={technologies.name}
-//         className="w-16 h-16 object-contain"
-//       />
-//       <h3 className="text-white text-[20px] font-bold text-center">
-//         {technologies.name}
-//       </h3>
-//       <div className="mt-20 flex flex-wrap gap-10 content-center">
-//         {technologies.map((technologies) => (
-//           <TechCard key={technologies.name} />
-//         ))}
-//       </div>
-//     </ParallaxTilt>
-//   );
-// };
-
-// const TechCard = () => {
-//   return (
-//     <div className="flex flex-row flex-wrap justify-center gap-12">
-//       {technologies.map((technology) => (
-//         <Card
-//           key={technology.name}
-//           className="w-20 border-white border-2 rounded-lg"
-//         >
-//           <div className="flex items-center justify-center">
-//             <CardMedia
-//               component="img"
-//               image={technology.icon}
-//               alt={technology.name}
-//               className="w-15 h-15"
-//             />
-//           </div>
-
-//           <CardContent className="text-center">
-//             <Typography variant="body2" color="textSecondary" component="p">
-//               {technology.detail}
-//             </Typography>
-//           </CardContent>
-//         </Card>
-//       ))}
-//     </div>
-//   );
-// };
-
 const TechCard = ({ index, name, icon, detail }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>

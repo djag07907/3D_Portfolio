@@ -97,22 +97,18 @@ const services = [
   {
     title: "Web Software Development",
     icon: web,
-    // import("../assets/animations/Animation - 1706186375806.json"),
   },
   {
     title: "Mobile Software Development",
     icon: mobile,
-    // import("../assets/animations/Animation - 1706186930975.json"),
   },
   {
     title: "UX/UI Design & Development",
     icon: backend,
-    // import("../assets/animations/Animation - 1706187999424.json"),
   },
   {
     title: "Software Consultancy",
     icon: creator,
-    // import("../assets/animations/Animation - 1706188074793.json"),
   },
 ];
 
@@ -140,7 +136,7 @@ const technologies = [
   {
     name: "Dart/Flutter",
     icon: flutter,
-    detail: "Advanced",
+    detail: "Expert",
   },
   {
     name: "React JS",
@@ -180,7 +176,7 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
-    detail: "Intermediate",
+    detail: "Advanced",
   },
   // {
   //   name: "MongoDB",
@@ -256,7 +252,7 @@ const experiences = [
     company_name: "Revelo LATAM - Freelance",
     icon: revelo,
     iconBg: "#E6DEDD",
-    date: "November 2022 - Present",
+    date: "November 2022 - December 2023",
     points: [
       "Freelance technology content writer for both beginners and advanced developers with SEO content writing.",
     ],
