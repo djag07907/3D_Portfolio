@@ -62,7 +62,15 @@ const Experience = () => {
         <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
-
+      {/* <motion.p
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        // variants={fadeIn("", "", 0.1, 1)}
+      >
+        Throughout my career, I've worked with transnational companies on
+        projects spanning verticals such as Business Solutions, e-Commerce,
+        Telecommunications, and SEO content, which has allowed me to develop a
+        diverse skill set and gain valuable experience.
+      </motion.p> */}
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (

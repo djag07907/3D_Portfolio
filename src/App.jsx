@@ -31,18 +31,18 @@ const App = () => {
           <Hero />
         </div>
         <About />
-        {isMobile ? <br></br> : <div></div>}
+        {/* {isMobile ? <br></br> : <div></div>} */}
         {isMobile ? <br></br> : <div></div>}
         <Experience />
-        {isMobile ? <br></br> : <div></div>}
+        {/* {isMobile ? <br></br> : <div></div>} */}
         {isMobile ? <br></br> : <div></div>}
         {isMobile ? <TechCard /> : <Tech />}
-        {isMobile ? <br></br> : <div></div>}
+        {/* {isMobile ? <br></br> : <div></div>} */}
         {isMobile ? <br></br> : <div></div>}
         <Works />
         {/* May change Feedback to Tech Content API fetching articles */}
         {/* <Feedbacks /> https://www.youtube.com/watch?v=0fYi8SGA20k 2:01:05 */}
-        {isMobile ? <br></br> : <div></div>}
+        {/* {isMobile ? <br></br> : <div></div>} */}
         {isMobile ? <br></br> : <div></div>}
         <div className="text-center">
           <p className="text-secondary text-[17px] max-w-8xl leading-[30px] mt-10">

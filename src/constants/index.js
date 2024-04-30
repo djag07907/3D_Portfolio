@@ -19,6 +19,9 @@ import {
   docker,
   figma,
   git,
+  htmlcssjs,
+  nestjs,
+  nextjs,
   html,
   javascript,
   mongodb,
@@ -26,7 +29,7 @@ import {
   reactjs,
   // redux,
   tailwind,
-  // typescript,
+  typescript,
   // threejs,
   flutter,
   illustrator,
@@ -116,39 +119,51 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML5",
-    icon: html,
+    name: "HTML+CSS+JS",
+    icon: htmlcssjs,
     detail: "Expert",
   },
   {
-    name: "CSS3",
-    icon: css,
+    name: "React JS",
+    icon: reactjs,
     detail: "Expert",
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "TypeScript",
+    icon: typescript,
+    detail: "Expert",
+  },
+  {
+    name: "NextJs",
+    icon: nextjs,
     detail: "Advanced",
   },
+  {
+    name: "Node JS",
+    icon: nodejs,
+    detail: "Advanced",
+  },
+  {
+    name: "NestJs",
+    icon: nestjs,
+    detail: "Advanced",
+  },
+
   // {
   //   name: "Bootstrap",
   //   icon: bootstrap,
   //   detail: "Bootstrap Advanced",
   // },
   {
-    name: "Dart/Flutter",
+    name: "Flutter",
     icon: flutter,
     detail: "Expert",
   },
-  {
-    name: "React JS",
-    icon: reactjs,
-    detail: "Advanced",
-  },
+
   {
     name: "React Native",
     icon: reactnative,
-    detail: "Advanced",
+    detail: "Expert",
   },
   // {
   //   name: "Tailwind CSS",
@@ -175,11 +190,7 @@ const technologies = [
   //   icon: django,
   //   detail: "Django Intermediate",
   // },
-  {
-    name: "Node JS",
-    icon: nodejs,
-    detail: "Advanced",
-  },
+
   // {
   //   name: "MongoDB",
   //   icon: mongodb,
@@ -198,11 +209,6 @@ const technologies = [
   {
     name: "PostgreSQL",
     icon: postgresql,
-    detail: "Advanced",
-  },
-  {
-    name: "PowerBI",
-    icon: powerbi,
     detail: "Advanced",
   },
   {
@@ -230,10 +236,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "April 2023 - October 2023",
     points: [
-      "FullStack Software Development with React/TS, C# and RESTApi.",
-      "Agile and multidisciplinary team collaborations with Kanban and XP methodologies using SOLID principles, MVC, Project Refinement and Clean Coding practices.",
+      "Developed full-stack projects with ReactJs, TypeScript, C# and REST API.",
+      "Collaborated alongside Agile teams with Kanban and XP methodologies using SOLID principles, MVC, Project Refinement and Clean Coding practices.",
       "CI/CD using GitLab and SonarCloud for code quality.",
-      "Skills: NodeJs, ReactJs, TypeScript, JavaScript, C#, TailwindCSS, Rest API, JSON, MVC and Trello.",
+      "Skills: NodeJs, ReactJs, TypeScript, C#, TailwindCSS, REST API, JSON, and MVC.",
     ],
   },
   {
@@ -243,10 +249,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "October 2020 - February 2023",
     points: [
-      "Front-end design and development for projects with UX/UI-oriented interfaces for Int'l clients in both Web and Mobile platforms from verticals such as Business Solutions, e-Commerce, and Telecom.",
-      "Agile/SCRUM Team Management and multidisciplinary team collaborations.",
-      "SEO optimization + Google Analytics implementation for corporate websites with MKT campaign management on social media.",
-      "Skills: ReactJs, TypeScript, JavaScript, React Native, Flutter, TailwindCSS, Rest API, JSON, XML, SQL, Jira, Figma, PowerBI, Google Analytics, WordPress and MailChimp.",
+      "Designed and developed front-end projects for Int'l clients in both Web and Mobile platforms for specific business solutions, e-Commerce, and Telecom.",
+      "Managed multidisciplinary teams using Agile/SCRUM methodologies.",
+      "Optimized and implemented SEO + Google Analytics for corporate websites with MKT campaign management on social media.",
+      "Skills: ReactJs, NextJs, TypeScript, React Native, Flutter, TailwindCSS, REST API, JSON, XML, SQL, Jira, Figma, PowerBI, Google Analytics, WordPress and MailChimp.",
     ],
   },
   {
@@ -266,11 +272,11 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jan 2018 - Present",
     points: [
-      "CEO and Founder of 'Son of Alva Solutions'",
-      "Design and development of projects such as LPs, Innovative web/mobile apps, Custom Management Systems, Social/Educational software for local and Int'l companies, using CMS, frameworks, BaaS and deployments in AWS/Heroku/GitHub.",
+      "CEO and Founder of 'Son of Alva Solutions' - personal brand",
+      "Designed and developed innovative web/mobile projects such as Landing Pages/Websites, digital wallets, e-commerce sites, real estate platforms, data management apps, web scraping, and tailored-made Management Systems for local and Int'l companies, using varied tech stacks, payment gateways, BaaS and deployments in AWS/Heroku/GitHub.",
       "Active regional tech challenges competitor.",
       "Former CEO and Associate of Cafe Pelao MSME with HR and Ops Management.",
-      "Skills: NodeJS/Strapi, ReactJs, TypeScript, React Native, Flutter, TailwindCSS, Django, Trello, Jira, PostgreSQL, MySQL, Rest API, JSON, Figma, AWS, Heroku, GitHub Pages, Firebase, Google Analytics, WordPress and MailChimp.",
+      "Skills: NodeJS, Strapi, NestJs, ReactJs, NextJs, TypeScript, React Native, Flutter, TailwindCSS, Django, PostgreSQL, MySQL, REST API, JSON, Figma, AWS, Heroku, Firebase, Google Analytics, WordPress and MailChimp.",
     ],
   },
   {
@@ -280,9 +286,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "March 2019 - July 2019",
     points: [
-      "ISO 22301, ISO 9001 e ISO 20001 Implementation.",
-      "Internal network infrastructure project management and collegiate systems.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Implemented ISO 22301, ISO 9001, and ISO 20001.",
+      "Integrated and managed internal network projects and collegiate systems.",
       "Skills: JavaScript, WordPress and Joomla.",
     ],
   },
@@ -294,7 +299,7 @@ const experiences = [
     date: "Jan 2020 - July 2020",
     points: [
       "Leading teacher of Professional technical baccalaureate in Computer Science.",
-      "LMS implementation and management for classes during the pandemic crisis.",
+      "Implemented and managed LMS platform classes during the pandemic crisis.",
       "Skills: EdModo, MS Office, PSeInt and C++.",
     ],
   },
