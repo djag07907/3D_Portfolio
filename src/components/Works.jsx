@@ -78,7 +78,7 @@ const Works = () => {
   return (
     <>
       <Helmet>
-        <title>Daniel Alvarez - Projects</title>
+        <title>Daniel Alvarez - Real-world Projects</title>
         <meta
           name="description"
           content="Daniel Alvarez's portfolio of real-world projects provides a

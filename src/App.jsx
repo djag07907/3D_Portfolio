@@ -20,6 +20,7 @@ import {
 } from "./components";
 import { Helmet } from "react-helmet";
 import TechCard from "./components/TechCard.jsx";
+import JSONLD from "./components/JSONLD.jsx";
 
 const App = () => {
   const isMobile = window.innerWidth <= 768;
