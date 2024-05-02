@@ -59,6 +59,7 @@ import {
   soas,
   caeh,
   hosanna,
+  tectrans,
   tato,
   gotitnoted,
   karlasl,
@@ -71,6 +72,7 @@ import {
   mobileanimation1,
   uxui,
   software,
+  link,
 } from "../assets";
 
 // import { webanimation, mobileanimation, uxui, seo } from "../assets/animations";
@@ -229,6 +231,19 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Front-End Flutter Developer",
+    company_name: "Tecnología Transaccional - Full Time office",
+    icon: tectrans,
+    iconBg: "#383E56",
+    date: "April 2024 - Present",
+    points: [
+      "Proficiently crafted bespoke frontend solutions utilizing Flutter for both Web and Mobile platforms.",
+      "Contributed to Agile teams following SCRUM methodology, integrating Factory and Singleton Patterns, MVVM architecture, and conducting Code Reviews.",
+      "Employed Bloc for efficient State Management and Modularization to ensure scalability and maintainability.",
+      "Skills: Flutter, Bloc, Factory Method, Singleton, Modularization, REST API, JSON, and MVVM.",
+    ],
+  },
   {
     title: "FullStack Software Engineer",
     company_name: "Acklen Avenue - Full Time remote",
@@ -522,7 +537,7 @@ const projects = [
       },
     ],
     image: developing,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://buscasa.net/",
   },
   {
     name: "CODENAME: MSR-23",

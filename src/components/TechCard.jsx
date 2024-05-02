@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../style";
 import ParallaxTilt from "react-parallax-tilt";
+import { Helmet } from "react-helmet";
 
 const TechCard = ({ index, name, icon, detail }) => {
   return (
@@ -48,6 +49,15 @@ const TechCard = ({ index, name, icon, detail }) => {
 const Techs = () => {
   return (
     <>
+      {/* <Helmet>
+        <title>Daniel Alvarez - Tech Skills</title>
+        <meta
+          name="description"
+          content="During my career as a Software Engineer, I've obtained a diverse skill
+          set and a wide range of valuable experience with different
+          technologies. My preferred Tech Stack is the following."
+        />
+      </Helmet> */}
       <motion.div variants={textVariant()}>
         {/* <p className={styles.sectionSubText}>My Tech Stack</p> */}
         <h2 className={styles.sectionHeadText}>My Tech Stack</h2>

@@ -18,6 +18,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import { Helmet } from "react-helmet";
 import TechCard from "./components/TechCard.jsx";
 
 const App = () => {
@@ -26,6 +27,15 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
+        <Helmet>
+          <title>Daniel Alvarez - Software Engineer Portfolio</title>
+          <meta
+            name="description"
+            content="This is the Portfolio Website of Daniel Alvarez,
+            a Software Engineer specialized in Web and Mobile Software Development
+            as well as UX/UI."
+          />
+        </Helmet>
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />

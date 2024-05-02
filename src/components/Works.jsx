@@ -9,10 +9,11 @@
 import ParallaxTilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import { github } from "../assets";
+import { github, link } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Helmet } from "react-helmet";
 
 const ProjectCard = ({
   index,
@@ -48,8 +49,8 @@ const ProjectCard = ({
             >
               {/* To open GitHub repository */}
               <img
-                src={github}
-                alt="github"
+                src={link}
+                alt="Link to Project"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
@@ -76,6 +77,16 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
+      <Helmet>
+        <title>Daniel Alvarez - Projects</title>
+        <meta
+          name="description"
+          content="Daniel Alvarez's portfolio of real-world projects provides a
+          comprehensive showcase of his skills and expertise, with each project
+          carefully curated to demonstrate his capacity for effective project
+          management and problem-solving."
+        />
+      </Helmet>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>

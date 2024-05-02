@@ -9,7 +9,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import Tooltip from "../Tooltip";
+// import Tooltip from "../Tooltip";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {

@@ -20,6 +20,7 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import nestjs from "./tech/nestjs.png";
 import nextjs from "./tech/nextjs.png";
+import link from "./linkIcon.png";
 // import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
@@ -50,6 +51,7 @@ import revelo from "./company/revelo.png";
 import soas from "./company/soas.png";
 import caeh from "./company/caeh.png";
 import hosanna from "./company/hosanna.png";
+import tectrans from "./company/tectrans.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -122,6 +124,7 @@ export {
   soas,
   caeh,
   hosanna,
+  tectrans,
   tato,
   gotitnoted,
   karlasl,
@@ -134,4 +137,5 @@ export {
   mobileanimation1,
   uxui,
   software,
+  link,
 };

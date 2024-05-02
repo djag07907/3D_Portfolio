@@ -14,6 +14,7 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import DownloadCVButton from "./CV";
+import { Helmet } from "react-helmet";
 import Lottie from "react-lottie";
 
 const ServiceCard = ({ index, title, icon }) => {
@@ -54,6 +55,15 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>Daniel Alvarez - About me</title>
+        <meta
+          name="description"
+          content="Skilled and versatile Software Engineer specialized
+            in Web and Mobile Software Development as well as UX/UI and software
+            life-cycle."
+        />
+      </Helmet>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>About me</h2>

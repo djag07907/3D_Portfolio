@@ -16,6 +16,7 @@ import { styles } from "../style";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { Helmet } from "react-helmet";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -58,6 +59,10 @@ const ExperienceCard = ({ experience }) => (
 const Experience = () => {
   return (
     <>
+      <Helmet>
+        <title>Daniel Alvarez - Work Experience</title>
+        <meta name="description" content="What I have done so far." />
+      </Helmet>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>Work Experience</h2>

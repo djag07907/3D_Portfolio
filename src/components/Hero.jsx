@@ -9,10 +9,19 @@
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
+import { Helmet } from "react-helmet";
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
+      <Helmet>
+        <title>Daniel Alvarez - Hero Section</title>
+        <meta
+          name="description"
+          content="I specialize in the design, development and refinement of web and
+            mobile software solutions."
+        />
+      </Helmet>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
