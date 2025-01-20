@@ -11,8 +11,8 @@ import React from "react";
 function DownloadCVButton() {
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "./cv/CV_DANIEL_ALVAREZ_2024.pdf";
-    link.download = "CV_DANIEL_ALVAREZ_2024.pdf";
+    link.href = "./cv/CV_DANIEL_ALVAREZ_2025.pdf";
+    link.download = "CV_DANIEL_ALVAREZ_2025.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

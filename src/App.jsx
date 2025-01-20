@@ -46,7 +46,7 @@ const App = () => {
         {isMobile ? <br></br> : <div></div>}
         <Experience />
         {/* {isMobile ? <br></br> : <div></div>} */}
-        {isMobile ? <br></br> : <div></div>}
+        {/* {isMobile ? <br></br> : <div></div>} */}
         {isMobile ? <TechCard /> : <Tech />}
         {/* {isMobile ? <br></br> : <div></div>} */}
         {isMobile ? <br></br> : <div></div>}

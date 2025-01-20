@@ -72,16 +72,16 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        As a skilled and versatile Software Engineer, I bring over 4 years of
-        experience crafting cutting-edge web and mobile solutions to the table.
-        Throughout my career, I've worked with transnational companies on
-        projects spanning verticals such as Business Solutions, e-Commerce,
-        Telecommunications, and SEO content, which has allowed me to develop a
-        diverse skill set and gain valuable experience. <br />
+        As a versatile Software Engineer with over four years of experience, I
+        specialize in crafting innovative cutting-edge web and mobile solutions.
+        I've collaborated with international companies on projects spanning
+        verticals such as Business Solutions, e-Commerce, Telecommunications,
+        and SEO content, which has allowed me to develop a diverse skill set and
+        gain valuable experience. <br />
         <br />
-        Whether you're looking to revamp your web presence, solve a tech issue,
-        or develop a new mobile app, I'm ready to tackle any project with
-        enthusiasm and expertise, ensuring that it exceeds your expectations.
+        Whether you need to enhance your web presence, resolve tech issues, or
+        develop a mobile app, I'm ready to tackle any project with enthusiasm
+        and expertise, ensuring that it exceeds your expectations.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 content-center">
         <DownloadCVButton />
@@ -94,5 +94,5 @@ const About = () => {
     </>
   );
 };
-// Section in which the wrapper is placed and navigates to the idName accordingly
+
 export default SectionWrapper(About, "about");

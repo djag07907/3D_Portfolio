@@ -32,6 +32,7 @@ const TechCard = ({ index, name, icon, detail }) => {
           <img
             src={icon}
             alt="tech_detail"
+            title="tech-detail"
             className="w-full h-full object-contain rounded-2xl bg-white"
           />
         </div>

@@ -15,7 +15,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../style";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 import { Helmet } from "react-helmet";
 
 const ExperienceCard = ({ experience }) => (
@@ -29,6 +29,7 @@ const ExperienceCard = ({ experience }) => (
         <img
           src={experience.icon}
           alt={experience.company_name}
+          title="company-logo"
           className="w-[80%] h-[80%] object-contain"
         />
       </div>
@@ -69,14 +70,14 @@ const Experience = () => {
       </motion.div>
       {/* <motion.p
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        // variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn("", "", 0.1, 1)}
       >
         Throughout my career, I've worked with transnational companies on
         projects spanning verticals such as Business Solutions, e-Commerce,
         Telecommunications, and SEO content, which has allowed me to develop a
         diverse skill set and gain valuable experience.
       </motion.p> */}
-      <div className="mt-20 flex flex-col">
+      <div className="mt-15 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />

@@ -53,7 +53,12 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={propic} alt="logo" className="w-9 h-9 object-contain" />
+          <img
+            src={propic}
+            title="daniel-propic"
+            alt="logo"
+            className="w-9 h-9 object-contain"
+          />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Daniel Alvarez &nbsp;
             <span className="sm:block hidden">|</span>
@@ -83,6 +88,7 @@ const Navbar = () => {
           <img
             src={toggle ? close : menu}
             alt="menu"
+            title="menu"
             className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
           />

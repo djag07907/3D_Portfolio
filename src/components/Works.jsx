@@ -40,6 +40,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt="project_image"
+            title="project-title"
             className="w-full h-full object-cover rounded-2xl"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -51,6 +52,7 @@ const ProjectCard = ({
               <img
                 src={link}
                 alt="Link to Project"
+                title="project-link"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
@@ -78,7 +80,7 @@ const Works = () => {
   return (
     <>
       <Helmet>
-        <title>Daniel Alvarez - Real-world Projects</title>
+        <title>Daniel Alvarez - Professional Portfolio</title>
         <meta
           name="description"
           content="Daniel Alvarez's portfolio of real-world projects provides a
