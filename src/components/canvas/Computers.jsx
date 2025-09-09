@@ -6,7 +6,7 @@
 // @details
 // ------------------------------------------------------------------ -->
 
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState, lazy } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 // import Tooltip from "../Tooltip";
@@ -45,6 +45,8 @@ const Computers = ({ isMobile }) => {
 // Component to render the scene.gltf
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const canvasRef = React.useRef(null);
 
   useEffect(() => {
     // Add a listener for changes to the screen size
@@ -61,33 +63,72 @@ const ComputersCanvas = () => {
     // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
+    // Intersection Observer for lazy loading
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      {
+        rootMargin: '100px',
+        threshold: 0.1,
+      }
+    );
+
+    if (canvasRef.current) {
+      observer.observe(canvasRef.current);
+    }
+
     // Remove the listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      observer.disconnect();
     };
   }, []);
 
-  return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-      style={{ width: "100%" }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
-        {/* {!isMobile && <Tooltip />} */}
-      </Suspense>
+  // Fallback content for better LCP
+  const FallbackContent = () => (
+    <div className="w-full h-full flex items-center justify-center">
+      <div className="text-center text-white opacity-75">
+        <div className="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
+          <div className="text-4xl">💻</div>
+        </div>
+        <p className="text-sm">Loading 3D Experience...</p>
+      </div>
+    </div>
+  );
 
-      <Preload all />
-    </Canvas>
+  return (
+    <div ref={canvasRef} style={{ width: "100%", height: "100%" }}>
+      {!isVisible ? (
+        <FallbackContent />
+      ) : (
+        <Canvas
+          frameloop="demand"
+          shadows
+          dpr={[1, 2]}
+          camera={{ position: [20, 3, 5], fov: 25 }}
+          gl={{ preserveDrawingBuffer: true, alpha: true, antialias: true }}
+          style={{ width: "100%" }}
+        >
+          <Suspense fallback={<CanvasLoader />}>
+            <OrbitControls
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2}
+              minPolarAngle={Math.PI / 2}
+              enableDamping
+              dampingFactor={0.05}
+            />
+            <Computers isMobile={isMobile} />
+            {/* {!isMobile && <Tooltip />} */}
+          </Suspense>
+
+          <Preload all />
+        </Canvas>
+      )}
+    </div>
   );
 };
 

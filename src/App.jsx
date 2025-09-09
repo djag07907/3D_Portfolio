@@ -21,6 +21,7 @@ import {
 import { Helmet } from "react-helmet";
 import TechCard from "./components/TechCard.jsx";
 import JSONLD from "./components/JSONLD.jsx";
+import "./performance-monitor.js";
 
 const App = () => {
   const isMobile = window.innerWidth <= 768;
@@ -37,20 +38,18 @@ const App = () => {
             as well as UX/UI."
           />
         </Helmet>
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <div className="bg-hero-pattern-mobile sm:bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
         </div>
-        <About />
-        {/* {isMobile ? <br></br> : <div></div>} */}
-        {isMobile ? <br></br> : <div></div>}
-        <Experience />
-        {/* {isMobile ? <br></br> : <div></div>} */}
-        {/* {isMobile ? <br></br> : <div></div>} */}
-        {isMobile ? <TechCard /> : <Tech />}
-        {/* {isMobile ? <br></br> : <div></div>} */}
-        {isMobile ? <br></br> : <div></div>}
-        <Works />
+        <div className="below-fold" style={{ contentVisibility: 'auto', containIntrinsicSize: '500px' }}>
+          <About />
+          {isMobile ? <br></br> : <div></div>}
+          <Experience />
+          {isMobile ? <TechCard /> : <Tech />}
+          {isMobile ? <br></br> : <div></div>}
+          <Works />
+        </div>
         {/* May change Feedback to Tech Content API fetching articles */}
         {/* <Feedbacks /> https://www.youtube.com/watch?v=0fYi8SGA20k 2:01:05 */}
         {/* {isMobile ? <br></br> : <div></div>} */}
