@@ -72,12 +72,12 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        As a versatile Software Engineer with over four years of experience, I
-        specialize in crafting innovative cutting-edge web and mobile solutions.
-        I've collaborated with international companies on projects spanning
-        verticals such as Business Solutions, e-Commerce, Telecommunications,
-        and SEO content, which has allowed me to develop a diverse skill set and
-        gain valuable experience. <br />
+        As a versatile Software Engineer with over five years of professional
+        experience, I specialize in building and crafting scalable,
+        high-performance web and mobile solutions. Through collaborations with
+        international companies on projects in business solutions, e-commerce,
+        telecommunications, and SEO content, I have developed a diverse
+        technical skill set and deep industry expertise. <br />
         <br />
         Whether you need to enhance your web presence, resolve tech issues, or
         develop a mobile app, I'm ready to tackle any project with enthusiasm

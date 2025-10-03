@@ -238,10 +238,12 @@ const experiences = [
     iconBg: "#383E56",
     date: "April 2024 - Present",
     points: [
-      "Proficiently crafted bespoke frontend solutions utilizing Flutter for both Web and Mobile platforms.",
-      "Contributed to Agile teams following SCRUM methodology, integrating Factory and Singleton Patterns, MVVM architecture, and conducting Code Reviews.",
-      "Employed Bloc for efficient State Management and Modularization to ensure scalability and maintainability.",
-      "Skills: Flutter, Bloc, Factory Method, Singleton, Modularization, REST API, JSON, and MVVM.",
+      "Designed and developed bespoke frontend solutions for web and mobile platforms with Flutter, enhancing UX and system performance.",
+      "Led Agile SCRUM teams, integrating Factory/Singleton patterns, MVVM/MVC architecture, and SOLID principles for maintainability and code quality.",
+      "Implemented custom BLOC state management and modularization strategies for scalability.",
+      "Developed reusable widget libraries to accelerate delivery timelines.",
+      "Defined, developed, and structured web and mobile project templates to establish coding standards and best practices for Flutter and Angular development, improving consistency across teams and tech stacks.",
+      "Skills: Flutter, BLOC, Angular, TypeScript, TailwindCSS, Factory Method, Singleton, SOLID, Modularization, REST API, MVVM, MVC, Architecture, Cross-Platform Development.",
     ],
   },
   {
@@ -251,10 +253,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "April 2023 - October 2023",
     points: [
-      "Developed full-stack projects with ReactJs, TypeScript, C# and REST API.",
-      "Collaborated alongside Agile teams with Kanban and XP methodologies using SOLID principles, MVC, Project Refinement and Clean Coding practices.",
-      "CI/CD using GitLab and SonarCloud for code quality.",
-      "Skills: NodeJs, ReactJs, TypeScript, C#, TailwindCSS, REST API, JSON, and MVC.",
+      "Delivered full-stack applications with React.js, TypeScript, C#, and REST APIs for diverse scalable business solutions.",
+      "Collaborated in Agile teams using Kanban/XP methodologies, applying SOLID principles, MVC architecture, and clean coding practices.",
+      "Implemented CI/CD pipelines with GitLab and SonarCloud, enhancing code reliability and deployment speed.",
+      "Skills: Node.js, React.js, TypeScript, C#, TailwindCSS, REST API, MVC, Agile Methodologies, CI/CD, Code Quality.",
     ],
   },
   {
@@ -264,10 +266,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "October 2020 - February 2023",
     points: [
-      "Designed and developed front-end projects for Int'l clients in both Web and Mobile platforms for specific business solutions, e-Commerce, and Telecom.",
-      "Managed multidisciplinary teams using Agile/SCRUM methodologies.",
-      "Optimized and implemented SEO + Google Analytics for corporate websites with MKT campaign management on social media.",
-      "Skills: ReactJs, NextJs, TypeScript, React Native, Flutter, TailwindCSS, REST API, JSON, XML, SQL, Jira, Figma, PowerBI, Google Analytics, WordPress and MailChimp.",
+      "Delivered tailored frontend solutions for web and mobile platforms for international clients in e-commerce, telecom, and other industries.",
+      "Led multidisciplinary teams using Agile SCRUM methodologies, improving collaboration and accelerating project delivery.",
+      "Optimized corporate websites for SEO and integrated Google Analytics, enhancing visibility, traffic tracking, and digital marketing effectiveness.",
+      "Skills: React.js, Next.js, Vue.js, TypeScript, React Native, Flutter, BLOC, TailwindCSS, REST API, SQL, Jira, Figma, Power BI, Google Analytics, WordPress, and MailChimp.",
     ],
   },
   {
@@ -277,7 +279,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "November 2022 - December 2023",
     points: [
-      "Freelance technology content writer for both beginners and advanced developers with SEO content writing.",
+      "Produced SEO-optimized technical content for beginner and advanced developers, enhancing visibility and engagement for engineering-focused platforms.",
     ],
   },
   {
@@ -287,11 +289,11 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jan 2018 - Present",
     points: [
-      "CEO and Founder of 'Son of Alva Solutions' - personal brand",
-      "Designed and developed innovative web/mobile projects such as Landing Pages/Websites, digital wallets, e-commerce sites, real estate platforms, data management apps, web scraping, and tailored-made Management Systems for local and Int'l companies, using varied tech stacks, payment gateways, BaaS and deployments in AWS/Heroku/GitHub.",
-      "Active regional tech challenges competitor.",
-      "Former CEO and Associate of Cafe Pelao MSME with HR and Ops Management.",
-      "Skills: NodeJS, Strapi, NestJs, ReactJs, NextJs, TypeScript, React Native, Flutter, TailwindCSS, Django, PostgreSQL, MySQL, REST API, JSON, Figma, AWS, Heroku, Firebase, Google Analytics, WordPress and MailChimp.",
+      "Founded and manage SoAS, delivering web and mobile solutions for local and international clients, including e-commerce platforms, digital wallets, real estate systems, and custom management tools.",
+      "Designed and implemented solutions across diverse tech stacks, integrating payment gateways, BaaS, and deploying applications on AWS, Heroku, Firebase, and GitHub for scalability and reliability.",
+      "Active in regional tech challenges to keep expertise and a competitive edge.",
+      "Directed operations as the former CEO of Café Pelao MSME, overseeing HR and aligning business goals with technical execution.",
+      "Skills: Node.js, Strapi, Nest.js, React.js, Next.js, TypeScript, React Native, Flutter, PostgreSQL, REST API, Figma, AWS, Heroku, Firebase, WordPress, and MailChimp.",
     ],
   },
   {

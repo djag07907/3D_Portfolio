@@ -38,6 +38,12 @@ const Hero = () => {
             I specialize in the design, development and refinement of web and
             mobile software solutions.
           </p>
+          <div className="mt-4">
+            <h3 className="text-white-100 text-lg sm:text-m font-light italic leading-relaxed">
+              "Crafting solutions that matter — because how you do anything is
+              how you do everything."
+            </h3>
+          </div>
         </div>
       </div>
 
