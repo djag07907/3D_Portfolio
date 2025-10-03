@@ -61,8 +61,8 @@ const Navbar = () => {
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Daniel Alvarez &nbsp;
-            <span className="sm:block hidden">|</span>
-            <span className="sm:block hidden">
+            <span className="lg:block hidden">|</span>
+            <span className="lg:block hidden">
               {" "}
               &nbsp;Web & Mobile Software Engineer
             </span>
