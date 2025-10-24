@@ -25,7 +25,7 @@ const ProjectCard = ({
 }) => {
   // Spring is the type of animation
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.1, 0.75)}>
       {/* Project card structure */}
       <ParallaxTilt
         options={{
