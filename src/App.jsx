@@ -18,7 +18,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import TechCard from "./components/TechCard.jsx";
 import JSONLD from "./components/JSONLD.jsx";
 import "./performance-monitor.js";
@@ -27,8 +27,9 @@ const App = () => {
   const isMobile = window.innerWidth <= 768;
 
   return (
-    <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+    <HelmetProvider>
+      <BrowserRouter>
+        <div className="relative z-0 bg-primary">
         <Helmet>
           <title>Daniel Alvarez - Software Engineer Portfolio</title>
           <meta
@@ -63,8 +64,9 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-      </div>
-    </BrowserRouter>
+        </div>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 };
 

@@ -16,7 +16,7 @@ import { styles } from "../style";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement

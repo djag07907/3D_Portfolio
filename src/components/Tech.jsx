@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../style";
 import TechCard from "./TechCard";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Tech = () => {
   return (

@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../style";
 import ParallaxTilt from "react-parallax-tilt";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const TechCard = ({ index, name, icon, detail }) => {
   return (

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
 import ComputerCSS from "./canvas/ComputerCSS";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useState, useEffect } from "react";
 
 const HeroOptimized = () => {
