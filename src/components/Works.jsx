@@ -25,7 +25,12 @@ const ProjectCard = ({
 }) => {
   // Spring is the type of animation
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.1, 0.75)}>
+    <motion.div 
+      variants={fadeIn("up", "spring", index * 0.05, 0.4)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       {/* Project card structure */}
       <ParallaxTilt
         options={{
@@ -89,7 +94,12 @@ const Works = () => {
           management and problem-solving."
         />
       </Helmet>
-      <motion.div variants={textVariant()}>
+      <motion.div 
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
@@ -97,6 +107,9 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           As a seasoned Software Engineer, I pride myself on my ability to
