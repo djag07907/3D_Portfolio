@@ -64,6 +64,14 @@ import {
   gotitnoted,
   karlasl,
   developing,
+  buscasa,
+  masari,
+  techblog,
+  powerboard,
+  novaaetherium,
+  emailgenerator,
+  angulartemplate,
+  pecunia,
   soasm,
   mindmap,
   webanimation,
@@ -350,86 +358,435 @@ const testimonials = [
 ];
 
 const projects = [
+  // FLUTTER PROJECTS
   {
-    name: "Tato Platform",
+    name: "BUSCASA",
     description:
-      "Contact center platform for offering and acquiring professional services. Professional job seekers can register into the platform and be contacted by customers in several locations. Currently designed for Honduras as main country, but more development is undergoing to expand it even further.",
+      "Full-stack real estate marketplace platform connecting property seekers with agents through intelligent geolocation search and secure transactions. Streamlines property discovery, agent communication, and deal closures with integrated payment processing across mobile and web platforms.",
     tags: [
       {
-        name: "kotlin",
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "strapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "bloc",
+        color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "authentication",
+        color: "green-text-gradient",
+      },
+      {
+        name: "payment-gateway",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "geolocation",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "aws",
         color: "orange-text-gradient",
+      },
+      {
+        name: "i18n",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "modular-design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "multiplatform",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: buscasa,
+    source_code_link: "https://buscasa.net/",
+  },
+  {
+    name: "Pecunia - Personal Finance Manager",
+    description:
+      "Web financial wellness platform that transforms spending habits through intelligent budgeting and visual analytics. Empowers users to achieve financial goals with multi-currency support, automated tracking, and actionable insights for smarter money management.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "bloc",
+        color: "green-text-gradient",
       },
       {
         name: "firebase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "authentication",
         color: "green-text-gradient",
       },
       {
-        name: "mobile",
+        name: "charts",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "i18n",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "modular-design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "multiplatform",
         color: "pink-text-gradient",
       },
     ],
-    image: tato,
-    source_code_link: "https://www.youtube.com/watch?v=huN8egefT2Y",
+    image: pecunia,
+    source_code_link: "",
   },
   {
-    name: "Got It Noted",
+    name: "CODENAME: MUSHU-23",
     description:
-      "Note-taking app that allows you to easily create multiple note in various formats, attach multimedia content, and access them later. With a powerful search function and note management, it helps the user to stay organized and productive. Currently undergoing a complete redesign and development process to improve UX/UI and overall note management.",
+      "Complete pet care platform revolutionizing how owners manage their pets' health and wellness. Combines digital medical records, veterinary guidance, and community insights with subscription-based premium features and seamless appointment scheduling with your favorite registered veterinarian.",
     tags: [
       {
-        name: "kotlin",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "android",
+        name: "bloc",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "authentication",
+        color: "green-text-gradient",
+      },
+      {
+        name: "subscription-model",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "payment-gateway",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "notifications",
+        color: "green-text-gradient",
+      },
+      {
+        name: "i18n",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "modular-design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "multiplatform",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: developing,
+    source_code_link: "https://sonofalvasolutions.com/",
+  },
+  {
+    name: "Powerboard - PBI Dashboard Manager",
+    description:
+      "Enterprise BI solution that centralizes data visualization and reporting for multi-national teams. Accelerates decision-making through role-based dashboard access, automated insights, and collaborative analytics with granular license control.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "powerbi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "strapi",
         color: "green-text-gradient",
       },
       {
         name: "restapi",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "mobile",
         color: "pink-text-gradient",
       },
+      {
+        name: "authentication",
+        color: "green-text-gradient",
+      },
+      {
+        name: "rbac",
+        color: "green-text-gradient",
+      },
+      {
+        name: "license-management",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "analytics",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "i18n",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "modular-design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "multi-tenant",
+        color: "green-text-gradient",
+      },
     ],
-    image: gotitnoted,
-    source_code_link:
-      "https://play.google.com/store/apps/details?id=solutions.alva.of.son.gotItNoted&pcampaignid=web_share",
+    image: powerboard,
+    source_code_link: "",
   },
+
+  // NEXT.JS PROJECTS
   {
-    name: "Karla SL",
+    name: "Nova Aetherium",
     description:
-      "KARLA SL, by its initials: Knowledge Application to Reliably Learn and Assist in Sign Language, is a mobile app (to be converted into a fully functional platform) that assists both hearing and deaf people to communicate by voice and text modules and features to learn the Honduran Sign Language. Currently under development phase.",
+      "Scalable evaluation platform that modernizes academic competitions and tech fairs. Eliminates manual judging bottlenecks with real-time scoring, automated workflows, and live leaderboards, supporting hundreds of concurrent evaluations with complete administrative oversight.",
     tags: [
       {
-        name: "kotlin",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "android",
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "authentication",
+        color: "green-text-gradient",
+      },
+      {
+        name: "rbac",
+        color: "green-text-gradient",
+      },
+      {
+        name: "realtime-sync",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "auto-setup",
+        color: "pink-text-gradient",
+      },
+
+      {
+        name: "i18n",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "modular-design",
+        color: "green-text-gradient",
+      },
+    ],
+    image: novaaetherium,
+    source_code_link: "",
+  },
+  {
+    name: "Developer Blog Platform",
+    description:
+      "Headless CMS project built specifically for personal technical content creation and education. Streamlines software development blogging with code syntax highlighting, version-controlled posts, and SEO optimization, driving audience engagement through analytics-backed insights.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "strapi",
         color: "green-text-gradient",
       },
       {
         name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "authentication",
+        color: "green-text-gradient",
+      },
+      {
+        name: "cms",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "seo",
+        color: "pink-text-gradient",
+      },
+
+      {
+        name: "i18n",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "modular-design",
+        color: "green-text-gradient",
+      },
+    ],
+    image: techblog,
+    source_code_link: "",
+  },
+  {
+    name: "Email Signature Generator",
+    description:
+      "Intuitive web tool that creates professional, branded email signatures in minutes. Eliminates design complexity with selectable templates, real-time preview, and universal email client compatibility, perfect for teams maintaining consistent corporate identity.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "i18n",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "modular-design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "drag-drop",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "html-export",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "responsive",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: emailgenerator,
+    source_code_link: "https://sonofalvasolutions.com/",
+  },
+
+  // REACT NATIVE PROJECTS
+  {
+    name: "MASARI",
+    description:
+      "Enterprise fintech platform merging digital wallet capabilities with multi-location business operations. Enables secure money transfers, KYC-compliant onboarding, and promotional campaigns while providing transaction analytics for data-driven business growth.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ruby",
+        color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "authentication",
+        color: "green-text-gradient",
+      },
+      {
+        name: "kyc",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "payment-gateway",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "encryption",
+        color: "green-text-gradient",
+      },
+      {
+        name: "aws",
         color: "orange-text-gradient",
       },
       {
-        name: "mobile",
+        name: "heroku",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "i18n",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "modular-design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "multiplatform",
         color: "pink-text-gradient",
       },
     ],
-    image: karlasl,
-    source_code_link: "https://github.com/",
+    image: masari,
+    source_code_link: "https://www.masari-app.com",
   },
+
+  // REACT.JS PROJECTS
   {
     name: "SoAS Landing Page",
     description:
-      "My Entrepreneur website for Software Development, Graphic Design, and IT Services Company.",
+      "Corporate website that converts visitors into clients through engaging animations and seamless user experience. Showcases comprehensive service offerings with optimized load times and interactive contact capabilities.",
     tags: [
       {
         name: "reactjs",
         color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "lottie",
+        color: "pink-text-gradient",
       },
       {
         name: "emailjs",
@@ -440,11 +797,15 @@ const projects = [
         color: "orange-text-gradient",
       },
       {
-        name: "lottie_animations",
+        name: "i18n",
         color: "pink-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "modular-design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "corporate",
         color: "blue-text-gradient",
       },
     ],
@@ -452,151 +813,98 @@ const projects = [
     source_code_link: "https://sonofalvasolutions.com/",
   },
   {
-    name: "Spot Mind-mapping",
+    name: "Spot Mind-Mapping",
     description:
-      "Demo version of the Mind-mapping web app that is under beta review and testing. It has features such as Node adding, local browser mind-map saving, node connections. More features to be added.",
+      "Visual thinking tool that transforms ideas into structured mind maps instantly. Enhances brainstorming and project planning with intuitive node connections, persistent storage, and simple design, enabling teams to visualize complex concepts effortlessly.",
     tags: [
       {
         name: "reactjs",
         color: "blue-text-gradient",
-      },
-      {
-        name: "reactflow",
-        color: "green-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "localstorage",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "web",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: mindmap,
-    source_code_link: "https://spot-mindmapping.danielalvarez-dev.com/",
-  },
-  {
-    name: "CODENAME: BSC-23",
-    description:
-      "Real State platform for searching, publishing and managing properties, agent contact and management, profile management and geolocation. App and web platform soon to be released this 2024!",
-    tags: [
-      {
-        name: "flutter",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "strapi",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "aws",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "reactjs",
-        color: "green-text-gradient",
       },
       {
         name: "typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "reactflow",
         color: "pink-text-gradient",
       },
       {
-        name: "auth",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "payment-gateway",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ios",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "android",
+        name: "localstorage",
         color: "green-text-gradient",
       },
       {
-        name: "web",
-        color: "blue-text-gradient",
+        name: "drag-drop",
+        color: "pink-text-gradient",
       },
       {
-        name: "multiplatform",
-        color: "pink-text-gradient",
+        name: "vite",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "responsive",
+        color: "blue-text-gradient",
       },
     ],
-    image: developing,
-    source_code_link: "https://buscasa.net/",
+    image: mindmap,
+    source_code_link: "https://spot-mindmapping.danielalvarez-dev.com/",
   },
+
+  // ANGULAR PROJECTS
   {
-    name: "CODENAME: MSR-23",
+    name: "Angular Backoffice Template",
     description:
-      "Digital Wallet and Business management platform for money transfer, commercial offers, locale management, team management, and coupons. Soon to be released this 2024!",
+      "Production-ready enterprise template that accelerates admin panel development by 60%. Provides secure authentication simulation, modular architecture, and best-practice patterns out-of-the-box, reducing time-to-market for internal management systems.",
     tags: [
       {
-        name: "react-native",
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
-        name: "ruby",
-        color: "pink-text-gradient",
+        name: "typescript",
+        color: "blue-text-gradient",
       },
       {
-        name: "heroku",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "aws",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "kyc",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "restapi",
+        name: "authentication",
         color: "green-text-gradient",
       },
       {
-        name: "ios",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "android",
+        name: "jwt",
         color: "green-text-gradient",
       },
       {
-        name: "mobile",
-        color: "blue-text-gradient",
+        name: "i18n",
+        color: "pink-text-gradient",
       },
       {
-        name: "multiplatform",
-        color: "orange-text-gradient",
+        name: "modular-design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "routing",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "lazy-loading",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "responsive",
+        color: "blue-text-gradient",
       },
     ],
-    image: developing,
-    source_code_link: "https://www.masari-app.com",
+    image: angulartemplate,
+    source_code_link: "https://sonofalvasolutions.com/",
   },
+
+  // KOTLIN/ANDROID PROJECTS
   {
-    name: "CODENAME: MUSHU-23",
+    name: "Tato Platform",
     description:
-      "Pet platform for multiple pet profile management, medical records and veterinary suggestions with freemium and premium accounts, donation system and food reviews. Beta to be released late this 2024!",
+      "On-demand service marketplace bridging the gap between skilled professionals and clients across regions. Streamlines job discovery, real-time communication, and secure bookings with intelligent geolocation matching and reputation management.",
     tags: [
       {
-        name: "flutter",
+        name: "kotlin",
         color: "blue-text-gradient",
       },
       {
@@ -604,57 +912,108 @@ const projects = [
         color: "orange-text-gradient",
       },
       {
-        name: "restapi",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "reactjs",
+        name: "authentication",
         color: "green-text-gradient",
       },
       {
-        name: "typescript",
-        color: "blue-text-gradient",
+        name: "geolocation",
+        color: "pink-text-gradient",
       },
       {
-        name: "web",
-        color: "orange-text-gradient",
+        name: "realtime-messaging",
+        color: "pink-text-gradient",
       },
       {
-        name: "ios",
-        color: "blue-text-gradient",
+        name: "mvvm",
+        color: "green-text-gradient",
       },
       {
         name: "android",
         color: "green-text-gradient",
       },
+    ],
+    image: tato,
+    source_code_link: "https://www.youtube.com/watch?v=huN8egefT2Y",
+  },
+  {
+    name: "Got It Noted",
+    description:
+      "Productivity-focused note-taking app that captures ideas in any format—text, voice, or checklist. Combines powerful search with offline-first design and cloud sync, ensuring your notes are always accessible and organized. Enhanced redesign in progress.",
+    tags: [
       {
-        name: "multiplatform",
-        color: "orange-text-gradient",
+        name: "kotlin",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "room-database",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mvvm",
+        color: "green-text-gradient",
+      },
+      {
+        name: "cloud-sync",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "multimedia",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "android",
+        color: "green-text-gradient",
       },
     ],
-    image: developing,
-    source_code_link: "https://sonofalvasolutions.com/",
+    image: gotitnoted,
+    source_code_link:
+      "https://play.google.com/store/apps/details?id=solutions.alva.of.son.gotItNoted&pcampaignid=web_share",
   },
-  // {
-  //   name: "Project under development 4",
-  //   description: "TBA.",
-  //   tags: [
-  //     {
-  //       name: "tag1",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "tag2",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "tag3",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: developing,
-  //   source_code_link: "https://github.com/",
-  // },
+  {
+    name: "KARLA SL",
+    description:
+      "Accessibility platform breaking communication barriers through sign language translation and education. Connects hearing and deaf communities with voice-to-sign features, interactive learning, and social engagement, promoting inclusion through technology.",
+    tags: [
+      {
+        name: "kotlin",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ml-kit",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "speech-recognition",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mvvm",
+        color: "green-text-gradient",
+      },
+      {
+        name: "gamification",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "accessibility",
+        color: "green-text-gradient",
+      },
+      {
+        name: "android",
+        color: "green-text-gradient",
+      },
+    ],
+    image: karlasl,
+    source_code_link: "https://github.com/",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

@@ -62,6 +62,14 @@ import karlasl from "./karlasl.png";
 import soasm from "./soas_main.png";
 import developing from "./developing.png";
 import mindmap from "./mind-map.png";
+import buscasa from "./buscasa.png";
+import masari from "./masari.png";
+import techblog from "./techblog.png";
+import powerboard from "./powerboard.png";
+import novaaetherium from "./novaaetherium.png";
+import emailgenerator from "./emailgenerator.png";
+import angulartemplate from "./angulartemplate.png";
+import pecunia from "./pecunia.png";
 
 import webanimation from "./animations/web.json";
 import webanimation1 from "./animations/web1.json";
@@ -128,6 +136,8 @@ export {
   tato,
   gotitnoted,
   karlasl,
+  buscasa,
+  masari,
   soasm,
   developing,
   mindmap,
@@ -138,4 +148,10 @@ export {
   uxui,
   software,
   link,
+  techblog,
+  powerboard,
+  novaaetherium,
+  emailgenerator,
+  angulartemplate,
+  pecunia,
 };
