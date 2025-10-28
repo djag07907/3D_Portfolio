@@ -621,7 +621,7 @@ const projects = [
       },
     ],
     image: novaaetherium,
-    source_code_link: "https://nova-aetherium.vercel.app/",
+    source_code_link: "https://nova-aetherium.danielalvarez-dev.com/",
   },
   {
     name: "Developer Blog Platform",
