@@ -8,29 +8,11 @@
 
 import { motion } from "framer-motion";
 import { styles } from "../style";
-// import { ComputersCanvas } from "./canvas"; // Commented out for performance
 import { Helmet } from "react-helmet-async";
-import { useState, useEffect } from "react";
+import Lottie from "lottie-react";
+import { development } from "../assets";
 
 const Hero = () => {
-  // const [showCanvas, setShowCanvas] = useState(false);
-
-  // useEffect(() => {
-  //   // Show 3D canvas from tablet and above
-  //   const mediaQuery = window.matchMedia("(min-width: 768px)");
-  //   setShowCanvas(mediaQuery.matches);
-
-  //   const handleMediaQueryChange = (event) => {
-  //     setShowCanvas(event.matches);
-  //   };
-
-  //   mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-  //   return () => {
-  //     mediaQuery.removeEventListener("change", handleMediaQueryChange);
-  //   };
-  // }, []);
-
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <Helmet>
@@ -41,29 +23,83 @@ const Hero = () => {
             mobile software solutions."
         />
       </Helmet>
-      <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 violet-gradient h-32 sm:h-40" />
-        </div>
+      {/* Mobile: Avatar on top */}
+      <div className="md:hidden absolute top-[80px] w-full flex justify-center z-10">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="relative"
+        >
+          <div className="w-[200px] h-[200px] flex items-center justify-center">
+            <Lottie
+              animationData={development}
+              loop={true}
+              className="w-full h-full"
+            />
+          </div>
+          {/* Glow effect */}
+          <div className="absolute inset-0 rounded-full bg-[#915EFF] opacity-20 blur-xl"></div>
+        </motion.div>
+      </div>
 
-        <div className="max-w-4xl z-10 relative">
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Daniel</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I specialize in the design, development and refinement of web and
-            mobile software solutions.
-          </p>
-          <div className="mt-6">
-            <h3 className="text-white-100 text-lg sm:text-xl font-light italic leading-relaxed">
-              "Crafting solutions that matter — because how you do anything is
-              how you do everything."
-            </h3>
+      {/* Content section */}
+      <div
+        className={`absolute inset-0 top-[300px] md:top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col md:flex-row items-start md:items-center gap-5`}
+      >
+        {/* Left side: Purple dot and text */}
+        <div className="flex flex-row md:flex-row items-start gap-5 flex-1">
+          <div className="flex flex-col justify-center items-center mt-5">
+            <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
+            <div className="w-1 violet-gradient h-32 sm:h-40" />
+          </div>
+
+          <div className="max-w-4xl z-10 relative">
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm <span className="text-[#915eff]">Daniel</span>
+            </h1>
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              I specialize in the design, development and refinement of web and
+              mobile software solutions.
+            </p>
+            <div className="mt-6">
+              <h3 className="text-white-100 text-lg sm:text-xl font-light italic leading-relaxed">
+                "Crafting solutions that matter — because how you do anything is
+                how you do everything."
+              </h3>
+            </div>
           </div>
         </div>
+
+        {/* Right side: Avatar for tablet and desktop */}
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="hidden md:flex justify-center items-center relative"
+        >
+          <div className="relative">
+            {/* Glow effect behind */}
+            <div className="absolute inset-0 rounded-full bg-[#915EFF] opacity-20 blur-2xl scale-110"></div>
+
+            {/* Avatar */}
+            <motion.div
+              animate={{ y: [0, -10, 0] }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              className="relative w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] flex items-center justify-center"
+            >
+              <Lottie
+                animationData={development}
+                loop={true}
+                className="w-full h-full"
+              />
+            </motion.div>
+          </div>
+        </motion.div>
       </div>
 
       {/* 3D computer commented out for performance optimization */}

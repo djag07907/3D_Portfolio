@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet-async";
 
 import { styles } from "../style";
 import { navLinks } from "../constants";
-import { logo, propic, menu, close } from "../assets";
+import { logo, me, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -54,10 +54,10 @@ const Navbar = () => {
           }}
         >
           <img
-            src={propic}
+            src={me}
             title="daniel-propic"
             alt="logo"
-            className="w-9 h-9 object-contain"
+            className="w-9 h-9 object-cover rounded-full"
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Daniel Alvarez &nbsp;
