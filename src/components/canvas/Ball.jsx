@@ -6,22 +6,16 @@
 // @details
 // ------------------------------------------------------------------ -->
 
-import React, { Suspense } from "react";
+import React, { Suspense, memo } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-  Decal,
-  Float,
-  OrbitControls,
-  Preload,
-  useTexture,
-} from "@react-three/drei";
+import { Decal, Float, OrbitControls, useTexture } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Ball = (props) => {
+const Ball = memo((props) => {
   const [decal] = useTexture([props.imgUrl]);
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+    <Float speed={1.5} rotationIntensity={0.8} floatIntensity={1.5}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       {/* Will cast shadow, receive shadow and render the balls */}
@@ -45,24 +39,31 @@ const Ball = (props) => {
       </mesh>
     </Float>
   );
-};
+});
 
-const BallCanvas = ({ icon }) => {
+Ball.displayName = "Ball";
+
+const BallCanvas = memo(({ icon }) => {
   return (
     // Balls init properties
     <Canvas
       frameloop="demand"
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
+      dpr={[1, 1.5]} // Reduced DPR for better performance
+      gl={{
+        preserveDrawingBuffer: true,
+        antialias: false, // Disable antialiasing for performance
+        powerPreference: "high-performance",
+      }}
+      performance={{ min: 0.5 }} // Adaptive performance
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
+        <OrbitControls enableZoom={false} enablePan={false} />
         <Ball imgUrl={icon} />
       </Suspense>
-
-      <Preload all />
     </Canvas>
   );
-};
+});
+
+BallCanvas.displayName = "BallCanvas";
 
 export default BallCanvas;
