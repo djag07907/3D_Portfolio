@@ -1,116 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Critical resource hints for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    
-    <!-- Preload critical hero background image -->
-    <link rel="preload" as="image" href="/src/assets/herobg.webp" fetchpriority="high" type="image/webp">
-    
-    <!-- Preload 3D model for hero section -->
-    <link rel="preload" as="fetch" href="/desktop_pc/scene.gltf" crossorigin>
-    
-    <!-- Favicon section -->
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="src/assets/propic.png"
-      title="daniel-propic"
-    />
-    <!-- Optimized font loading with font-display swap -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
-    />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel's Portfolio</title>
-    
-    <!-- Critical CSS inlined for better LCP -->
-    <style>
-      /* Base styles */
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        background-color: #050816;
-      }
-      
-      /* Hero section critical styles */
-      .hero-section {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        margin: 0 auto;
-      }
-      
+<head>
+  <meta charset="UTF-8" />
+  <!-- Critical resource hints for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+  <!-- Preload critical hero background image -->
+  <link rel="preload" as="image" href="/src/assets/herobg.webp" fetchpriority="high" type="image/webp">
+
+  <!-- Preload 3D model for hero section -->
+  <link rel="preload" as="fetch" href="/desktop_pc/scene.gltf" crossorigin>
+
+  <!-- Favicon section -->
+  <link rel="icon" type="image/svg+xml" href="src/assets/me.jpeg" title="daniel-propic" />
+  <!-- Optimized font loading with font-display swap -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel's Portfolio</title>
+
+  <!-- Critical CSS inlined for better LCP -->
+  <style>
+    /* Base styles */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: #050816;
+    }
+
+    /* Hero section critical styles */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+    }
+
+    .hero-background {
+      background-image: url('/src/assets/herobg-mobile.webp'), url('/src/assets/herobg-mobile.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    @media (min-width: 640px) {
       .hero-background {
-        background-image: url('/src/assets/herobg-mobile.webp'), url('/src/assets/herobg-mobile.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background-image: url('/src/assets/herobg.webp'), url('/src/assets/herobg-optimized.png');
       }
-      
-      @media (min-width: 640px) {
-        .hero-background {
-          background-image: url('/src/assets/herobg.webp'), url('/src/assets/herobg-optimized.png');
-        }
-      }
-      
-      .hero-content {
-        position: absolute;
-        inset: 0;
-        top: 120px;
-        max-width: 80rem;
-        margin: 0 auto;
-        padding: 0 1.5rem;
-        display: flex;
-        align-items: flex-start;
-        gap: 1.25rem;
-      }
-      
-      .hero-title {
-        font-size: 3.75rem;
-        font-weight: 900;
-        color: white;
-        line-height: 1;
-        margin: 0;
-      }
-      
-      .hero-name { color: #915eff; }
-      
-      @media (max-width: 640px) {
-        .hero-title { font-size: 2.25rem; }
-      }
-      
-      .hero-subtitle {
-        font-size: 1.125rem;
-        font-weight: 500;
-        color: #f3f3f3;
-        margin-top: 0.5rem;
-        line-height: 1.875rem;
-      }
-      
-      /* Font optimization */
-      @font-face {
-        font-family: 'Roboto';
-        src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
-    </style>
-  </head>
+    }
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    .hero-content {
+      position: absolute;
+      inset: 0;
+      top: 120px;
+      max-width: 80rem;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+    }
+
+    .hero-title {
+      font-size: 3.75rem;
+      font-weight: 900;
+      color: white;
+      line-height: 1;
+      margin: 0;
+    }
+
+    .hero-name {
+      color: #915eff;
+    }
+
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: 2.25rem;
+      }
+    }
+
+    .hero-subtitle {
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: #f3f3f3;
+      margin-top: 0.5rem;
+      line-height: 1.875rem;
+    }
+
+    /* Font optimization */
+    @font-face {
+      font-family: 'Roboto';
+      src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

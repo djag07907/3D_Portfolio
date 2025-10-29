@@ -14,6 +14,7 @@ import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import htmlcssjs from "./tech/htmlcssjs.png";
+import angular from "./tech/angular.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
@@ -22,6 +23,7 @@ import reactjs from "./tech/reactjs.png";
 import nestjs from "./tech/nestjs.png";
 import nextjs from "./tech/nextjs.png";
 import link from "./linkIcon.png";
+import firebase from "./tech/firebase.png";
 // import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
@@ -109,6 +111,7 @@ export {
   // threejs,
   flutter,
   illustrator,
+  angular,
   photoshop,
   kotlin,
   mysql,
@@ -142,6 +145,7 @@ export {
   buscasa,
   masari,
   soasm,
+  firebase,
   developing,
   mindmap,
   webanimation,

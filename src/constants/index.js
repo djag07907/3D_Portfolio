@@ -32,8 +32,10 @@ import {
   typescript,
   // threejs,
   flutter,
+  firebase,
   illustrator,
   photoshop,
+  angular,
   kotlin,
   mysql,
   postgresql,
@@ -134,7 +136,7 @@ const technologies = [
     detail: "Expert",
   },
   {
-    name: "React JS",
+    name: "React.js",
     icon: reactjs,
     detail: "Expert",
   },
@@ -144,19 +146,29 @@ const technologies = [
     detail: "Expert",
   },
   {
-    name: "NextJs",
+    name: "Next.js",
     icon: nextjs,
-    detail: "Advanced",
+    detail: "Expert",
   },
   {
-    name: "Node JS",
+    name: "Angular",
+    icon: angular,
+    detail: "Expert",
+  },
+  {
+    name: "Node.js",
     icon: nodejs,
-    detail: "Advanced",
+    detail: "Expert",
   },
   {
-    name: "NestJs",
+    name: "Nest.js",
     icon: nestjs,
     detail: "Advanced",
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+    detail: "Expert",
   },
 
   // {
@@ -224,7 +236,7 @@ const technologies = [
   {
     name: "Figma",
     icon: figma,
-    detail: "Advanced",
+    detail: "Expert",
   },
   {
     name: "WordPress",

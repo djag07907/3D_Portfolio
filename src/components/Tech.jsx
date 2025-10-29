@@ -6,14 +6,41 @@
 // @details
 // ------------------------------------------------------------------ -->
 
-import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../style";
-import TechCard from "./TechCard";
+import ParallaxTilt from "react-parallax-tilt";
 import { Helmet } from "react-helmet-async";
+
+const TechCardItem = ({ index, name, icon, detail }) => {
+  return (
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <ParallaxTilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-tertiary p-5 rounded-2xl w-full"
+      >
+        <div className="relative w-full h-[120px]">
+          <img
+            src={icon}
+            alt="tech_detail"
+            title="tech-detail"
+            className="w-full h-full object-contain rounded-2xl bg-white"
+          />
+        </div>
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <p className="mt-2 text-secondary text-[14px]">{detail}</p>
+        </div>
+      </ParallaxTilt>
+    </motion.div>
+  );
+};
 
 const Tech = () => {
   return (
@@ -41,15 +68,9 @@ const Tech = () => {
           technologies. My preferred Tech Stack is the following:
         </motion.p>
       </div>
-      <div className="mt-10 flex flex-row flex-wrap justify-center gap-12">
-        {technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
-            <BallCanvas icon={technology.icon} />
-            {/* <TechCard icon={technology.icon} /> */}
-            <p className="text-secondary text-center font-semibold">
-              {technology.detail}
-            </p>
-          </div>
+      <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        {technologies.map((technology, index) => (
+          <TechCardItem key={`technology-${index}`} index={index} {...technology} />
         ))}
       </div>
     </>

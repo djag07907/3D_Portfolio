@@ -45,7 +45,7 @@ const Hero = () => {
 
       {/* Content section */}
       <div
-        className={`absolute inset-0 top-[300px] md:top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col md:flex-row items-start md:items-center gap-5`}
+        className={`absolute inset-0 top-[300px] md:top-1/2 md:-translate-y-1/2 max-w-7xl mx-auto ${styles.paddingX} flex flex-col md:flex-row items-start md:items-center gap-5`}
       >
         {/* Left side: Purple dot and text */}
         <div className="flex flex-row md:flex-row items-start gap-5 flex-1">
