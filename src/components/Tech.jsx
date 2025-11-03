@@ -11,20 +11,18 @@ import { technologies } from "../constants";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../style";
-import ParallaxTilt from "react-parallax-tilt";
+import OptimizedTilt from "./OptimizedTilt";
 import { Helmet } from "react-helmet-async";
 
 const TechCardItem = ({ index, name, icon, detail }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <ParallaxTilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl w-full"
-      >
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.05, 0.4)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.1 }}
+    >
+      <OptimizedTilt className="bg-tertiary p-5 rounded-2xl w-full">
         <div className="relative w-full h-[120px]">
           <img
             src={icon}
@@ -37,7 +35,7 @@ const TechCardItem = ({ index, name, icon, detail }) => {
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{detail}</p>
         </div>
-      </ParallaxTilt>
+      </OptimizedTilt>
     </motion.div>
   );
 };
@@ -70,7 +68,11 @@ const Tech = () => {
       </div>
       <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {technologies.map((technology, index) => (
-          <TechCardItem key={`technology-${index}`} index={index} {...technology} />
+          <TechCardItem
+            key={`technology-${index}`}
+            index={index}
+            {...technology}
+          />
         ))}
       </div>
     </>

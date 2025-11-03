@@ -6,7 +6,7 @@
 // @details
 // ------------------------------------------------------------------ -->
 
-import ParallaxTilt from "react-parallax-tilt";
+import OptimizedTilt from "./OptimizedTilt";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { github, link } from "../assets";
@@ -25,21 +25,14 @@ const ProjectCard = ({
 }) => {
   // Spring is the type of animation
   return (
-    <motion.div 
+    <motion.div
       variants={fadeIn("up", "spring", index * 0.05, 0.4)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
     >
       {/* Project card structure */}
-      <ParallaxTilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-      >
+      <OptimizedTilt className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
         {/* Project card properties */}
         <div className="relative w-full h-[230px]">
           <img
@@ -76,7 +69,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </ParallaxTilt>
+      </OptimizedTilt>
     </motion.div>
   );
 };
@@ -94,7 +87,7 @@ const Works = () => {
           management and problem-solving."
         />
       </Helmet>
-      <motion.div 
+      <motion.div
         variants={textVariant()}
         initial="hidden"
         whileInView="show"
