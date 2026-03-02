@@ -1,89 +1,39 @@
-// <!-- -----------------------------------------------------------------
-// @copyright    (C) 2023 SoAS
-// @file         Hero.jsx
-// @author       Daniel Alvarez <josamogax@gmail.com>
-// @brief        Hero section component file.
-// @details
-// ------------------------------------------------------------------ -->
-
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import { Helmet } from "react-helmet-async";
-import Lottie from "lottie-react";
-import { useState, useEffect } from "react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Hero = () => {
-  const [animationData, setAnimationData] = useState(null);
+  const [showAnimation, setShowAnimation] = useState(false);
 
   useEffect(() => {
-    // Delay loading to improve FID (First Input Delay)
-    const loadAfterIdle = () => {
-      import("../assets/animations/development.json").then((data) => {
-        setAnimationData(data.default);
-      });
-    };
-
-    if ("requestIdleCallback" in window) {
-      window.requestIdleCallback(loadAfterIdle, { timeout: 2000 });
-    } else {
-      setTimeout(loadAfterIdle, 1000);
-    }
+    // Delay slightly to ensure main thread is clear for initial paint
+    const timer = setTimeout(() => {
+      setShowAnimation(true);
+    }, 100);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <Helmet>
-        <title>Daniel Alvarez - Hero Section</title>
-        <meta
-          name="description"
-          content="I specialize in the design, development and refinement of web and
-            mobile software solutions."
-        />
-      </Helmet>
-      {/* Mobile: Avatar on top */}
-      <div className="md:hidden absolute top-[80px] w-full flex justify-center z-10">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="relative"
-        >
-          <div className="w-[200px] h-[200px] flex items-center justify-center">
-            {animationData ? (
-              <Lottie
-                animationData={animationData}
-                loop={true}
-                className="w-full h-full"
-              />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center bg-purple-900/20 rounded-full animate-pulse">
-                <span className="text-purple-300 text-xs">Loading...</span>
-              </div>
-            )}
-          </div>
-          {/* Glow effect */}
-          <div className="absolute inset-0 rounded-full bg-[#915EFF] opacity-20 blur-xl"></div>
-        </motion.div>
-      </div>
+    <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
+      <div className="absolute inset-x-0 bottom-0 top-0 bg-hero-pattern bg-cover bg-no-repeat bg-center z-0 hero-background" />
 
-      {/* Content section */}
       <div
-        className={`absolute inset-0 top-[300px] md:top-1/2 md:-translate-y-1/2 max-w-7xl mx-auto ${styles.paddingX} flex flex-col md:flex-row items-start md:items-center gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 z-10`}
       >
-        {/* Left side: Purple dot and text */}
-        <div className="flex flex-row md:flex-row items-start gap-5 flex-1">
-          <div className="flex flex-col justify-center items-center mt-5">
-            <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-            <div className="w-1 violet-gradient h-32 sm:h-40" />
-          </div>
+        <div className="flex flex-col justify-center items-center mt-5">
+          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+        </div>
 
-          <div className="max-w-4xl z-10 relative">
+        <div className="flex flex-col md:flex-row w-full justify-between items-center gap-10">
+          <div className="max-w-xl">
             <h1 className={`${styles.heroHeadText} text-white`}>
               Hi, I'm <span className="text-[#915eff]">Daniel</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I specialize in the design, development and refinement of web and
-              mobile software solutions.
+              I develop high-performance <br className="sm:block hidden" />
+              web and mobile applications.
             </p>
             <div className="mt-6">
               <h3 className="text-white-100 text-lg sm:text-xl font-light italic leading-relaxed">
@@ -92,60 +42,35 @@ const Hero = () => {
               </h3>
             </div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex-1 flex justify-center items-center relative w-full h-[300px] md:h-[400px]"
+          >
+            <div className="absolute inset-0 rounded-full bg-[#915EFF] opacity-10 blur-3xl scale-110"></div>
+            {showAnimation ? (
+              <DotLottieReact
+                src="/assets/animations/development.lottie"
+                autoplay
+                loop
+                style={{ width: "100%", height: "100%", maxWidth: "500px" }}
+              />
+            ) : (
+              <div className="w-[200px] h-[200px] bg-purple-900/10 rounded-full animate-pulse flex items-center justify-center">
+                <span className="text-purple-300 text-xs text-center">
+                  Loading...
+                </span>
+              </div>
+            )}
+          </motion.div>
         </div>
-
-        {/* Right side: Avatar for tablet and desktop */}
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="hidden md:flex justify-center items-center relative"
-        >
-          <div className="relative">
-            {/* Glow effect behind */}
-            <div className="absolute inset-0 rounded-full bg-[#915EFF] opacity-20 blur-2xl scale-110"></div>
-
-            {/* Avatar */}
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                repeatType: "reverse",
-              }}
-              className="relative w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] flex items-center justify-center"
-            >
-              {animationData ? (
-                <Lottie
-                  animationData={animationData}
-                  loop={true}
-                  className="w-full h-full"
-                />
-              ) : (
-                <div className="w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] flex items-center justify-center bg-purple-900/20 rounded-full animate-pulse">
-                  <span className="text-purple-300 text-sm">
-                    Loading Animation...
-                  </span>
-                </div>
-              )}
-            </motion.div>
-          </div>
-        </motion.div>
       </div>
 
-      {/* 3D computer commented out for performance optimization */}
-      {/* {showCanvas && (
-        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 pointer-events-none md:bottom-12 lg:bottom-8">
-          <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px]">
-            <ComputersCanvas />
-          </div>
-        </div>
-      )} */}
-
-      {/* Animated scroll button */}
-      {/* <div className="absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center">
-        <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-20 px-2 lg:px-0">
+        <a href="#about" aria-label="Scroll to about">
+          <div className="w-[30px] sm:w-[35px] h-[58px] sm:h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -159,7 +84,7 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div> */}
+      </div>
     </section>
   );
 };

@@ -1,10 +1,5 @@
 import logo from "./logo.svg";
-import propic from "./propic.png";
 import me from "./me.jpeg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -73,23 +68,9 @@ import novaaetherium from "./novaaetherium.png";
 import emailgenerator from "./emailgenerator.png";
 import angulartemplate from "./angulartemplate.png";
 import pecunia from "./pecunia.png";
-
-// import webanimation from "./animations/web.json";
-// import webanimation1 from "./animations/web1.json";
-// import mobileanimation from "./animations/mobile.json";
-// import mobileanimation1 from "./animations/mobile1.json";
-// import uxui from "./animations/uxui.json";
-// import software from "./animations/software.json";
-// import development from "./animations/development.json";
-
 export {
   logo,
-  propic,
   me,
-  backend,
-  creator,
-  mobile,
-  web,
   github,
   menu,
   close,
@@ -148,13 +129,6 @@ export {
   firebase,
   developing,
   mindmap,
-  // webanimation,
-  // webanimation1,
-  // mobileanimation,
-  // mobileanimation1,
-  // uxui,
-  // software,
-  // development,
   link,
   techblog,
   powerboard,

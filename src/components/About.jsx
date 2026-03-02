@@ -15,30 +15,19 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import DownloadCVButton from "./CV";
 import { Helmet } from "react-helmet-async";
-import Lottie from "lottie-react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { useInView } from "react-intersection-observer";
 
 const ServiceCard = ({ index, title, iconName }) => {
-  const [animationData, setAnimationData] = React.useState(null);
-
-  React.useEffect(() => {
-    if (iconName) {
-      const loadAfterIdle = () => {
-        import(`../assets/animations/${iconName}.json`).then((data) => {
-          setAnimationData(data.default);
-        });
-      };
-
-      if ("requestIdleCallback" in window) {
-        window.requestIdleCallback(loadAfterIdle, { timeout: 3000 });
-      } else {
-        setTimeout(loadAfterIdle, 1500);
-      }
-    }
-  }, [iconName]);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   return (
     <ParallaxTilt className="xs:w-[250px] w-full">
       <motion.div
+        ref={ref}
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
@@ -50,10 +39,11 @@ const ServiceCard = ({ index, title, iconName }) => {
           }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          {animationData ? (
-            <Lottie
-              animationData={animationData}
-              loop={true}
+          {inView ? (
+            <DotLottieReact
+              src={`/assets/animations/${iconName}.lottie`}
+              autoplay
+              loop
               style={{ height: 150, width: 150 }}
             />
           ) : (

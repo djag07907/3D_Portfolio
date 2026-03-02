@@ -8,10 +8,6 @@
 
 import {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
   github,
   menu,
   close,

@@ -8,7 +8,12 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Poppins",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   background-color: #050816; /* primary color */
 }
 
@@ -21,7 +26,8 @@ body {
 }
 
 .hero-background {
-  background-image: url('/src/assets/herobg-mobile.webp'), url('/src/assets/herobg-mobile.png');
+  background-image:
+    url("/assets/herobg-mobile.webp"), url("/assets/herobg-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -30,7 +36,8 @@ body {
 
 @media (min-width: 640px) {
   .hero-background {
-    background-image: url('/src/assets/herobg.webp'), url('/src/assets/herobg-optimized.png');
+    background-image:
+      url("/assets/herobg.webp"), url("/assets/herobg-optimized.png");
   }
 }
 
@@ -60,13 +67,13 @@ body {
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 50%;
-  background-color: #915EFF;
+  background-color: #915eff;
 }
 
 .hero-line {
   width: 0.25rem;
   height: 10rem;
-  background: linear-gradient(to bottom, #915EFF, transparent);
+  background: linear-gradient(to bottom, #915eff, transparent);
 }
 
 @media (max-width: 640px) {
@@ -134,24 +141,27 @@ nav {
 
 /* Preload critical fonts */
 @font-face {
-  font-family: 'Roboto';
-  src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2');
+  font-family: "Poppins";
+  src: url("https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfedw.woff2")
+    format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2') format('woff2');
+  font-family: "Poppins";
+  src: url("https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2")
+    format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2') format('woff2');
+  font-family: "Poppins";
+  src: url("https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2")
+    format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;

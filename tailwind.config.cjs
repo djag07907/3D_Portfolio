@@ -26,6 +26,9 @@ module.exports = {
       screens: {
         xs: "450px",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
       backgroundImage: {
         "hero-pattern":
           "url('/assets/herobg.webp'), url('/assets/herobg-optimized.png')",
