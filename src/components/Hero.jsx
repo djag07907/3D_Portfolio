@@ -10,9 +10,26 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { Helmet } from "react-helmet-async";
 import Lottie from "lottie-react";
-import { development } from "../assets";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [animationData, setAnimationData] = useState(null);
+
+  useEffect(() => {
+    // Delay loading to improve FID (First Input Delay)
+    const loadAfterIdle = () => {
+      import("../assets/animations/development.json").then((data) => {
+        setAnimationData(data.default);
+      });
+    };
+
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(loadAfterIdle, { timeout: 2000 });
+    } else {
+      setTimeout(loadAfterIdle, 1000);
+    }
+  }, []);
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <Helmet>
@@ -32,11 +49,17 @@ const Hero = () => {
           className="relative"
         >
           <div className="w-[200px] h-[200px] flex items-center justify-center">
-            <Lottie
-              animationData={development}
-              loop={true}
-              className="w-full h-full"
-            />
+            {animationData ? (
+              <Lottie
+                animationData={animationData}
+                loop={true}
+                className="w-full h-full"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center bg-purple-900/20 rounded-full animate-pulse">
+                <span className="text-purple-300 text-xs">Loading...</span>
+              </div>
+            )}
           </div>
           {/* Glow effect */}
           <div className="absolute inset-0 rounded-full bg-[#915EFF] opacity-20 blur-xl"></div>
@@ -92,11 +115,19 @@ const Hero = () => {
               }}
               className="relative w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] flex items-center justify-center"
             >
-              <Lottie
-                animationData={development}
-                loop={true}
-                className="w-full h-full"
-              />
+              {animationData ? (
+                <Lottie
+                  animationData={animationData}
+                  loop={true}
+                  className="w-full h-full"
+                />
+              ) : (
+                <div className="w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] flex items-center justify-center bg-purple-900/20 rounded-full animate-pulse">
+                  <span className="text-purple-300 text-sm">
+                    Loading Animation...
+                  </span>
+                </div>
+              )}
             </motion.div>
           </div>
         </motion.div>

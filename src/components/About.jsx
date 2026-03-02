@@ -17,7 +17,25 @@ import DownloadCVButton from "./CV";
 import { Helmet } from "react-helmet-async";
 import Lottie from "lottie-react";
 
-const ServiceCard = ({ index, title, icon }) => {
+const ServiceCard = ({ index, title, iconName }) => {
+  const [animationData, setAnimationData] = React.useState(null);
+
+  React.useEffect(() => {
+    if (iconName) {
+      const loadAfterIdle = () => {
+        import(`../assets/animations/${iconName}.json`).then((data) => {
+          setAnimationData(data.default);
+        });
+      };
+
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(loadAfterIdle, { timeout: 3000 });
+      } else {
+        setTimeout(loadAfterIdle, 1500);
+      }
+    }
+  }, [iconName]);
+
   return (
     <ParallaxTilt className="xs:w-[250px] w-full">
       <motion.div
@@ -32,8 +50,20 @@ const ServiceCard = ({ index, title, icon }) => {
           }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          {/* <img src={icon} alt={title} className="w-16 h-16 object-contain" /> */}
-          <Lottie animationData={icon} loop={true} style={{ height: 150, width: 150 }} />
+          {animationData ? (
+            <Lottie
+              animationData={animationData}
+              loop={true}
+              style={{ height: 150, width: 150 }}
+            />
+          ) : (
+            <div
+              style={{ height: 150, width: 150 }}
+              className="flex items-center justify-center bg-purple-900/10 rounded-full animate-pulse"
+            >
+              <span className="text-purple-300 text-xs">Loading...</span>
+            </div>
+          )}
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>

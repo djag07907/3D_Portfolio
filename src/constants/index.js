@@ -76,12 +76,6 @@ import {
   pecunia,
   soasm,
   mindmap,
-  webanimation,
-  webanimation1,
-  mobileanimation,
-  mobileanimation1,
-  uxui,
-  software,
   link,
 } from "../assets";
 
@@ -113,19 +107,19 @@ export const navLinks = [
 const services = [
   {
     title: "Web Software Development",
-    icon: webanimation1,
+    iconName: "web1",
   },
   {
     title: "App Software Development",
-    icon: mobileanimation1,
+    iconName: "mobile1",
   },
   {
     title: "UX/UI Design",
-    icon: uxui,
+    iconName: "uxui",
   },
   {
     title: "Software Consultancy",
-    icon: software,
+    iconName: "software",
   },
 ];
 
