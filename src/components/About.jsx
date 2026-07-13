@@ -67,12 +67,10 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Daniel Alvarez - About me</title>
+        <title>Daniel Alvarez - Digital Partner & Full Stack Engineer</title>
         <meta
           name="description"
-          content="Skilled and versatile Software Engineer specialized
-            in Web and Mobile Software Development as well as UX/UI and software
-            life-cycle."
+          content="Daniel Alvarez is a Digital Partner & Full Stack Software Engineer helping businesses build & scale digital products. Specialized in Flutter, React Native, Next.js, Node.js, TypeScript, and Firebase."
         />
       </Helmet>
       <motion.div variants={textVariant()}>
@@ -83,16 +81,17 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        As a versatile Software Engineer with over five years of professional
-        experience, I specialize in building and crafting scalable,
-        high-performance web and mobile solutions. Through collaborations with
-        international companies on projects in business solutions, e-commerce,
-        telecommunications, and SEO content, I have developed a diverse
-        technical skill set and deep industry expertise. <br />
+        Most businesses don't need more software — they need the right software.
+        That's the perspective I bring as a Digital Partner and a Full Stack
+        Software Engineer. I specialize in bridging the gap between technical
+        execution and business goals, helping teams design, build, and scale
+        products that support real growth.
         <br />
-        Whether you need to enhance your web presence, resolve tech issues, or
-        develop a mobile app, I'm ready to tackle any project with enthusiasm
-        and expertise, ensuring that it exceeds your expectations.
+        <br />
+        With over five years of professional experience, I collaborate with
+        startups and established teams alike. I believe the best conversations
+        happen before coding starts — discussing ideas, aligning priorities, and
+        making sure we're solving the right problem.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 content-center">
         <DownloadCVButton />

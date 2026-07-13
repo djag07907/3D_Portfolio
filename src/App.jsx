@@ -7,8 +7,8 @@
 // ------------------------------------------------------------------ -->
 
 import { BrowserRouter } from "react-router-dom";
-import { lazy, Suspense } from "react";
-import { Navbar, Hero } from "./components";
+import { lazy, Suspense, useEffect } from "react";
+import { Navbar, Hero, JSONLD } from "./components";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import "./performance-monitor.js";
 
@@ -39,17 +39,34 @@ const LoadingFallback = () => (
 const App = () => {
   const isMobile = window.innerWidth <= 768;
 
+  useEffect(() => {
+    const gaId = import.meta.env.VITE_GA_ID;
+    if (gaId) {
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      window.gtag = gtag;
+      gtag("js", new Date());
+      gtag("config", gaId);
+    }
+  }, []);
+
   return (
     <HelmetProvider>
       <BrowserRouter>
         <div className="relative z-0 bg-primary">
+          <JSONLD />
           <Helmet>
-            <title>Daniel Alvarez - Software Engineer Portfolio</title>
+            <title>Daniel Alvarez - Digital Partner & Full Stack Software Engineer</title>
             <meta
               name="description"
-              content="This is the Portfolio Website of Daniel Alvarez,
-            a Software Engineer specialized in Web and Mobile Software Development
-            as well as UX/UI."
+              content="Daniel Alvarez is a Digital Partner & Full Stack Software Engineer helping businesses build & scale digital products. Specialized in Flutter, React Native, Next.js, Angular, Node.js, and Firebase."
             />
           </Helmet>
           <div className="bg-hero-pattern-mobile sm:bg-hero-pattern bg-cover bg-no-repeat bg-center">

@@ -242,18 +242,19 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Front-End Flutter Developer",
+    title: "Front-End Developer",
     company_name: "Tecnología Transaccional - Full Time office",
     icon: tectrans,
     iconBg: "#383E56",
     date: "April 2024 - Present",
     points: [
-      "Designed and developed bespoke frontend solutions for web and mobile platforms with Flutter, enhancing UX and system performance.",
-      "Led Agile SCRUM teams, integrating Factory/Singleton patterns, MVVM/MVC architecture, and SOLID principles for maintainability and code quality.",
-      "Implemented custom BLOC state management and modularization strategies for scalability.",
-      "Developed reusable widget libraries to accelerate delivery timelines.",
-      "Defined, developed, and structured web and mobile project templates to establish coding standards and best practices for Flutter and Angular development, improving consistency across teams and tech stacks.",
-      "Skills: Flutter, BLOC, Angular, TypeScript, TailwindCSS, Factory Method, Singleton, SOLID, Modularization, REST API, MVVM, MVC, Architecture, Cross-Platform Development.",
+      "Designed and developed scalable web and cross-platform mobile applications using Flutter and Angular.",
+      "Led Agile SCRUM teams while defining software architecture, engineering standards, and scalable development practices.",
+      "Architected modular frameworks, reusable component libraries, and custom state management solutions (BLoC, Angular Signals, NgRx) to accelerate development across multiple projects.",
+      "Owned the end-to-end delivery of software products from concept to production by transforming business requirements into technical architecture, UX/UI designs, technical documentation, and production-ready implementations.",
+      "Designed project foundations from scratch, enabling teams to rapidly build new products while maintaining consistent engineering best practices.",
+      "Integrated APIs and third-party services while managing deployment, continuous maintenance, and mobile releases for the Apple App Store and Google Play Store.",
+      "Skills: Flutter, BLOC, Angular, NgRX, Signals, REST API, MVC, MVVM, Factory, Singleton, SOLID, Modular Architecture, TypeScript, Figma, Cross-Platform Development, Mobile Release Management, Technical Documentation.",
     ],
   },
   {
@@ -293,7 +294,7 @@ const experiences = [
     ],
   },
   {
-    title: "Freelance Developer & Entrepreneur",
+    title: "Freelance Engineer & Entrepreneur",
     company_name: "SoAS - Freelance",
     icon: soas,
     iconBg: "#E6DEDD",
@@ -360,6 +361,7 @@ const testimonials = [
 ];
 
 const projects = [
+  // ADD VAELTRYX DIGITAL BROCHURE AND LINKS
   // FLUTTER PROJECTS
   {
     name: "BUSCASA",

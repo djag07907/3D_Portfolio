@@ -64,7 +64,7 @@ const Navbar = () => {
             <span className="lg:block hidden">|</span>
             <span className="lg:block hidden">
               {" "}
-              &nbsp;Web & Mobile Software Engineer
+              &nbsp;Digital Partner & FullStack Software Engineer
             </span>
           </p>
         </Link>

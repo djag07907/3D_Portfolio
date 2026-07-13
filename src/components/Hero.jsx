@@ -32,8 +32,8 @@ const Hero = () => {
               Hi, I'm <span className="text-[#915eff]">Daniel</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop high-performance <br className="sm:block hidden" />
-              web and mobile applications.
+              I engineer high-performance <br className="sm:block hidden" />
+              web and mobile products.
             </p>
             <div className="mt-6">
               <h3 className="text-white-100 text-lg sm:text-xl font-light italic leading-relaxed">
