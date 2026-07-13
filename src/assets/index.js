@@ -68,6 +68,8 @@ import novaaetherium from "./novaaetherium.png";
 import emailgenerator from "./emailgenerator.png";
 import angulartemplate from "./angulartemplate.png";
 import pecunia from "./pecunia.png";
+import vaeltryx from "./vaeltryx.png";
+import vaeltryx_lp from "./vaeltryx_lp.png";
 export {
   logo,
   me,
@@ -136,4 +138,6 @@ export {
   emailgenerator,
   angulartemplate,
   pecunia,
+  vaeltryx,
+  vaeltryx_lp,
 };

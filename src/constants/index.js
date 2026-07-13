@@ -73,6 +73,8 @@ import {
   soasm,
   mindmap,
   link,
+  vaeltryx,
+  vaeltryx_lp,
 } from "../assets";
 
 // import { webanimation, mobileanimation, uxui, seo } from "../assets/animations";
@@ -361,8 +363,48 @@ const testimonials = [
 ];
 
 const projects = [
-  // ADD VAELTRYX DIGITAL BROCHURE AND LINKS
   // FLUTTER PROJECTS
+  {
+    name: "Vaeltryx Business Platform",
+    description:
+      "Developer-first business management platform designed to streamline software projects, client licenses, and billing compliance. Serves as a central operational hub for digital partners and entrepreneurs, featuring a premium dark mode dashboard, Lottie animations, and automated invoicing with client-customized PDF rendering.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "postgres",
+        color: "green-text-gradient",
+      },
+      {
+        name: "bloc",
+        color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "invoice-pdf",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "i18n",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "multiplatform",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: vaeltryx,
+    source_code_link: "",
+  },
   {
     name: "BUSCASA",
     description:
@@ -577,6 +619,43 @@ const projects = [
   },
 
   // NEXT.JS PROJECTS
+  {
+    name: "Vaeltryx Landing Page",
+    description:
+      "High-performance marketing landing page for the Vaeltryx platform. Tailored to showcase corporate services, project catalog previews, pricing details, and license registration options. Integrates interactive elements, contact forms, and fluid micro-animations to drive user onboarding.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "lottie",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "emailjs",
+        color: "green-text-gradient",
+      },
+    ],
+    image: vaeltryx_lp,
+    source_code_link: "",
+  },
   {
     name: "Nova Aetherium",
     description:
